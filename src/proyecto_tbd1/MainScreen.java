@@ -52,14 +52,17 @@ public class MainScreen extends javax.swing.JFrame implements Runnable {
         jPanel3 = new javax.swing.JPanel();
         OptionPanel = new javax.swing.JPanel();
         Options = new javax.swing.JLabel();
+        AddPanel = new javax.swing.JPanel();
         Add = new javax.swing.JLabel();
+        List_Panel = new javax.swing.JPanel();
         List = new javax.swing.JLabel();
+        SearchPanel = new javax.swing.JPanel();
         Search = new javax.swing.JLabel();
         ExitPanel = new javax.swing.JPanel();
         Exit = new javax.swing.JLabel();
         Real = new javax.swing.JLabel();
         State = new javax.swing.JLabel();
-        House_Image = new javax.swing.JLabel();
+        ListPanel = new javax.swing.JLabel();
         SmallHouse = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -115,17 +118,111 @@ public class MainScreen extends javax.swing.JFrame implements Runnable {
 
         jPanel3.add(OptionPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 110, 90));
 
+        AddPanel.setBackground(new java.awt.Color(255, 0, 0));
+        AddPanel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                AddPanelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                AddPanelMouseExited(evt);
+            }
+        });
+
         Add.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/rebautizar.png"))); // NOI18N
-        jPanel3.add(Add, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 110, 80));
+        Add.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                AddMouseEntered(evt);
+            }
+        });
+
+        javax.swing.GroupLayout AddPanelLayout = new javax.swing.GroupLayout(AddPanel);
+        AddPanel.setLayout(AddPanelLayout);
+        AddPanelLayout.setHorizontalGroup(
+            AddPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Add, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+        );
+        AddPanelLayout.setVerticalGroup(
+            AddPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AddPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Add, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(20, 20, 20))
+        );
+
+        jPanel3.add(AddPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 110, 80));
+
+        List_Panel.setBackground(new java.awt.Color(255, 0, 0));
+        List_Panel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                List_PanelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                List_PanelMouseExited(evt);
+            }
+        });
 
         List.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         List.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/portapapeles.png"))); // NOI18N
-        jPanel3.add(List, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 110, 70));
+
+        javax.swing.GroupLayout List_PanelLayout = new javax.swing.GroupLayout(List_Panel);
+        List_Panel.setLayout(List_PanelLayout);
+        List_PanelLayout.setHorizontalGroup(
+            List_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 110, Short.MAX_VALUE)
+            .addGroup(List_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(List_PanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(List, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        List_PanelLayout.setVerticalGroup(
+            List_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(List_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(List_PanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(List, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        jPanel3.add(List_Panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 110, 100));
+
+        SearchPanel.setBackground(new java.awt.Color(255, 0, 0));
+        SearchPanel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                SearchPanelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                SearchPanelMouseExited(evt);
+            }
+        });
 
         Search.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/buscar.png"))); // NOI18N
-        jPanel3.add(Search, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 120, 80));
+
+        javax.swing.GroupLayout SearchPanelLayout = new javax.swing.GroupLayout(SearchPanel);
+        SearchPanel.setLayout(SearchPanelLayout);
+        SearchPanelLayout.setHorizontalGroup(
+            SearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 120, Short.MAX_VALUE)
+            .addGroup(SearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(SearchPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Search, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        SearchPanelLayout.setVerticalGroup(
+            SearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 90, Short.MAX_VALUE)
+            .addGroup(SearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(SearchPanelLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Search, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        jPanel3.add(SearchPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 110, 90));
 
         ExitPanel.setBackground(new java.awt.Color(255, 0, 0));
 
@@ -180,10 +277,10 @@ public class MainScreen extends javax.swing.JFrame implements Runnable {
         State.setText("Estate");
         jPanel1.add(State, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 300, 110));
 
-        House_Image.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        House_Image.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/MainScreen_House2.png"))); // NOI18N
-        House_Image.setLabelFor(House_Image);
-        jPanel1.add(House_Image, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 0, 650, 700));
+        ListPanel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        ListPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/MainScreen_House2.png"))); // NOI18N
+        ListPanel.setLabelFor(ListPanel);
+        jPanel1.add(ListPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 0, 650, 700));
 
         SmallHouse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/MainScreen_House2(Small).png"))); // NOI18N
         jPanel1.add(SmallHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 500, 110, 120));
@@ -236,6 +333,34 @@ public class MainScreen extends javax.swing.JFrame implements Runnable {
         ExitPanel.setBackground(null);
     }//GEN-LAST:event_ExitMouseExited
 
+    private void AddPanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddPanelMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AddPanelMouseExited
+
+    private void AddMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddMouseEntered
+        AddPanel.setBackground(new Color(139, 0, 0));
+    }//GEN-LAST:event_AddMouseEntered
+
+    private void AddPanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddPanelMouseEntered
+        AddPanel.setBackground(null);
+    }//GEN-LAST:event_AddPanelMouseEntered
+
+    private void List_PanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_List_PanelMouseExited
+        List_Panel.setBackground(null);
+    }//GEN-LAST:event_List_PanelMouseExited
+
+    private void SearchPanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SearchPanelMouseExited
+        SearchPanel.setBackground(null);
+    }//GEN-LAST:event_SearchPanelMouseExited
+
+    private void List_PanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_List_PanelMouseEntered
+        List_Panel.setBackground(new Color(139, 0, 0));
+    }//GEN-LAST:event_List_PanelMouseEntered
+
+    private void SearchPanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SearchPanelMouseEntered
+        SearchPanel.setBackground(new Color(139, 0, 0));
+    }//GEN-LAST:event_SearchPanelMouseEntered
+
     /**
      * @param args the command line arguments
      */
@@ -281,14 +406,17 @@ public class MainScreen extends javax.swing.JFrame implements Runnable {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Add;
+    private javax.swing.JPanel AddPanel;
     private javax.swing.JLabel Exit;
     private javax.swing.JPanel ExitPanel;
-    private javax.swing.JLabel House_Image;
     private javax.swing.JLabel List;
+    private javax.swing.JLabel ListPanel;
+    private javax.swing.JPanel List_Panel;
     private javax.swing.JPanel OptionPanel;
     private javax.swing.JLabel Options;
     private javax.swing.JLabel Real;
     private javax.swing.JLabel Search;
+    private javax.swing.JPanel SearchPanel;
     private javax.swing.JLabel SmallHouse;
     private javax.swing.JLabel State;
     private javax.swing.JPanel jPanel1;
