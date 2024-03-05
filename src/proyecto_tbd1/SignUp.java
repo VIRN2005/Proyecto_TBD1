@@ -8,12 +8,12 @@ package proyecto_tbd1;
  *
  * @author Victo
  */
-public class Login extends javax.swing.JFrame {
+public class SignUp extends javax.swing.JFrame {
 
     /**
      * Creates new form Login
      */
-    public Login() {
+    public SignUp() {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setTitle("Teoría de Base de Datos I");
@@ -36,14 +36,17 @@ public class Login extends javax.swing.JFrame {
         Real = new javax.swing.JLabel();
         Estate = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        TXT_Abajo = new javax.swing.JLabel();
+        DeNuevo = new javax.swing.JLabel();
         Bienvenido = new javax.swing.JLabel();
         User = new javax.swing.JLabel();
         Username = new javax.swing.JTextField();
         Pass = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
-        LogIN = new javax.swing.JLabel();
+        SignIN = new javax.swing.JLabel();
         Sign = new javax.swing.JButton();
+        LogIN = new javax.swing.JLabel();
+        Log = new javax.swing.JButton();
+        Pass1 = new javax.swing.JLabel();
         Login_Background = new javax.swing.JLabel();
         Lines1 = new javax.swing.JLabel();
         Lines2 = new javax.swing.JLabel();
@@ -90,11 +93,11 @@ public class Login extends javax.swing.JFrame {
 
         Fondo.add(Real_Estate, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 590, 380));
 
-        TXT_Abajo.setFont(new java.awt.Font("British Shorthair", 0, 70)); // NOI18N
-        TXT_Abajo.setForeground(new java.awt.Color(51, 153, 0));
-        TXT_Abajo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        TXT_Abajo.setText("a esta aventura!");
-        Fondo.add(TXT_Abajo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 380, 120));
+        DeNuevo.setFont(new java.awt.Font("British Shorthair", 0, 70)); // NOI18N
+        DeNuevo.setForeground(new java.awt.Color(51, 153, 0));
+        DeNuevo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DeNuevo.setText("de nuevo!");
+        Fondo.add(DeNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 380, 120));
 
         Bienvenido.setBackground(new java.awt.Color(0, 0, 0));
         Bienvenido.setFont(new java.awt.Font("Neo Sans Std", 1, 48)); // NOI18N
@@ -107,7 +110,7 @@ public class Login extends javax.swing.JFrame {
         User.setForeground(new java.awt.Color(51, 51, 51));
         User.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         User.setText("USERNAME");
-        Fondo.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, 140, 40));
+        Fondo.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, 140, 40));
 
         Username.setFont(new java.awt.Font("Neo Sans Std Light", 0, 18)); // NOI18N
         Username.setText("Ingrese su Usuario");
@@ -121,13 +124,13 @@ public class Login extends javax.swing.JFrame {
                 UsernameActionPerformed(evt);
             }
         });
-        Fondo.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 260, 330, 40));
+        Fondo.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 230, 330, 40));
 
         Pass.setFont(new java.awt.Font("Neo Sans Std Light", 0, 24)); // NOI18N
         Pass.setForeground(new java.awt.Color(51, 51, 51));
         Pass.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Pass.setText("PASSWORD");
-        Fondo.add(Pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 310, 140, 40));
+        Fondo.add(Pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 280, 140, 40));
 
         jPasswordField1.setFont(new java.awt.Font("Neo Sans Std Light", 0, 18)); // NOI18N
         jPasswordField1.setText("jPasswordField1");
@@ -141,15 +144,15 @@ public class Login extends javax.swing.JFrame {
                 jPasswordField1ActionPerformed(evt);
             }
         });
-        Fondo.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 340, 330, 40));
+        Fondo.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 310, 330, 40));
 
-        LogIN.setBackground(new java.awt.Color(0, 0, 0));
-        LogIN.setFont(new java.awt.Font("Neo Sans Std", 1, 28)); // NOI18N
-        LogIN.setForeground(new java.awt.Color(0, 0, 0));
-        LogIN.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LogIN.setText("Log In");
-        LogIN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Fondo.add(LogIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 390, 100, 50));
+        SignIN.setBackground(new java.awt.Color(0, 0, 0));
+        SignIN.setFont(new java.awt.Font("Neo Sans Std", 1, 28)); // NOI18N
+        SignIN.setForeground(new java.awt.Color(0, 0, 0));
+        SignIN.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        SignIN.setText("Sign In");
+        SignIN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Fondo.add(SignIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 360, 100, 50));
 
         Sign.setBackground(new java.awt.Color(102, 204, 0));
         Sign.setFont(new java.awt.Font("Neo Sans Std", 1, 24)); // NOI18N
@@ -160,7 +163,37 @@ public class Login extends javax.swing.JFrame {
                 SignActionPerformed(evt);
             }
         });
-        Fondo.add(Sign, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 390, 330, 40));
+        Fondo.add(Sign, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 360, 330, 40));
+
+        LogIN.setBackground(new java.awt.Color(0, 0, 0));
+        LogIN.setFont(new java.awt.Font("Neo Sans Std", 1, 28)); // NOI18N
+        LogIN.setForeground(new java.awt.Color(0, 0, 0));
+        LogIN.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LogIN.setText("Log In");
+        LogIN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Fondo.add(LogIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 430, 100, 50));
+
+        Log.setBackground(new java.awt.Color(204, 204, 204));
+        Log.setFont(new java.awt.Font("Neo Sans Std", 1, 24)); // NOI18N
+        Log.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Log.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Log.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LogMouseClicked(evt);
+            }
+        });
+        Log.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogActionPerformed(evt);
+            }
+        });
+        Fondo.add(Log, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 430, 330, 40));
+
+        Pass1.setFont(new java.awt.Font("Neo Sans Std Light", 0, 18)); // NOI18N
+        Pass1.setForeground(new java.awt.Color(153, 153, 153));
+        Pass1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Pass1.setText("No tienes cuenta? Entonces dale Log In");
+        Fondo.add(Pass1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 400, 330, 40));
 
         Login_Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Login_Back.png"))); // NOI18N
         Login_Background.setOpaque(true);
@@ -206,6 +239,19 @@ public class Login extends javax.swing.JFrame {
         Username.setText("");
     }//GEN-LAST:event_UsernameMouseClicked
 
+    private void LogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LogActionPerformed
+
+    private void LogMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LogMouseClicked
+        SignUp sign = new SignUp();
+        Login login = new Login();
+        sign.setVisible(false);
+        login.setVisible(true);
+        login.setLocationRelativeTo(null);
+        dispose();
+    }//GEN-LAST:event_LogMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -223,20 +269,23 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Login().setVisible(true);
+                new SignUp().setVisible(true);
             }
         });
     }
@@ -244,6 +293,7 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Background;
     private javax.swing.JLabel Bienvenido;
+    private javax.swing.JLabel DeNuevo;
     private javax.swing.JLabel Discover;
     private javax.swing.JLabel Dreams;
     private javax.swing.JLabel Estate;
@@ -253,13 +303,15 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel Lines2;
     private javax.swing.JLabel Lines3;
     private javax.swing.JLabel Lines4;
+    private javax.swing.JButton Log;
     private javax.swing.JLabel LogIN;
     private javax.swing.JLabel Login_Background;
     private javax.swing.JLabel Pass;
+    private javax.swing.JLabel Pass1;
     private javax.swing.JLabel Real;
     private javax.swing.JPanel Real_Estate;
     private javax.swing.JButton Sign;
-    private javax.swing.JLabel TXT_Abajo;
+    private javax.swing.JLabel SignIN;
     private javax.swing.JLabel User;
     private javax.swing.JTextField Username;
     private javax.swing.JPasswordField jPasswordField1;

@@ -152,10 +152,10 @@ public class Loading_Screen extends javax.swing.JFrame implements Runnable {
             jProgressBar1.setValue(i);
         }
 
-//        MainScreen ms = new MainScreen();
-//        ms.setVisible(true);
-        Login login = new Login();
-        login.setVisible(true);
+//        Login login = new Login();
+//        login.setVisible(true);
+        SignUp signup = new SignUp();
+        signup.setVisible(true);
         dispose();
         
     }
