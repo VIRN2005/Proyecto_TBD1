@@ -44,6 +44,7 @@ public class Login extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
         LogIN = new javax.swing.JLabel();
         Sign = new javax.swing.JButton();
+        Mostrar_Pass = new javax.swing.JCheckBox();
         Login_Background = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         Lines1 = new javax.swing.JLabel();
@@ -95,20 +96,20 @@ public class Login extends javax.swing.JFrame {
         TXT_Abajo.setForeground(new java.awt.Color(51, 153, 0));
         TXT_Abajo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TXT_Abajo.setText("a esta aventura!");
-        Fondo.add(TXT_Abajo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 380, 120));
+        Fondo.add(TXT_Abajo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, 380, 120));
 
         Bienvenido.setBackground(new java.awt.Color(0, 0, 0));
         Bienvenido.setFont(new java.awt.Font("Neo Sans Std", 1, 48)); // NOI18N
         Bienvenido.setForeground(new java.awt.Color(51, 51, 51));
         Bienvenido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Bienvenido.setText("BIENVENIDO");
-        Fondo.add(Bienvenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, 390, 70));
+        Fondo.add(Bienvenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 0, 390, 70));
 
         User.setFont(new java.awt.Font("Neo Sans Std Light", 0, 24)); // NOI18N
         User.setForeground(new java.awt.Color(51, 51, 51));
         User.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         User.setText("USERNAME");
-        Fondo.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, 140, 40));
+        Fondo.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 330, 140, 40));
 
         Username.setFont(new java.awt.Font("Neo Sans Std Light", 0, 18)); // NOI18N
         Username.setText("Ingrese su Usuario");
@@ -122,13 +123,13 @@ public class Login extends javax.swing.JFrame {
                 UsernameActionPerformed(evt);
             }
         });
-        Fondo.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 260, 330, 40));
+        Fondo.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 360, 330, 40));
 
         Pass.setFont(new java.awt.Font("Neo Sans Std Light", 0, 24)); // NOI18N
         Pass.setForeground(new java.awt.Color(51, 51, 51));
         Pass.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Pass.setText("PASSWORD");
-        Fondo.add(Pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 310, 140, 40));
+        Fondo.add(Pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 410, 140, 40));
 
         jPasswordField1.setFont(new java.awt.Font("Neo Sans Std Light", 0, 18)); // NOI18N
         jPasswordField1.setText("jPasswordField1");
@@ -142,7 +143,7 @@ public class Login extends javax.swing.JFrame {
                 jPasswordField1ActionPerformed(evt);
             }
         });
-        Fondo.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 340, 330, 40));
+        Fondo.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 440, 330, 40));
 
         LogIN.setBackground(new java.awt.Color(0, 0, 0));
         LogIN.setFont(new java.awt.Font("Neo Sans Std", 1, 28)); // NOI18N
@@ -150,22 +151,37 @@ public class Login extends javax.swing.JFrame {
         LogIN.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LogIN.setText("Log In");
         LogIN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Fondo.add(LogIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 390, 100, 50));
+        Fondo.add(LogIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 520, 100, 50));
 
         Sign.setBackground(new java.awt.Color(102, 204, 0));
         Sign.setFont(new java.awt.Font("Neo Sans Std", 1, 24)); // NOI18N
         Sign.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Sign.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Sign.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SignMouseClicked(evt);
+            }
+        });
         Sign.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SignActionPerformed(evt);
             }
         });
-        Fondo.add(Sign, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 390, 330, 40));
+        Fondo.add(Sign, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 520, 330, 40));
+
+        Mostrar_Pass.setFont(new java.awt.Font("Neo Sans Std Light", 0, 14)); // NOI18N
+        Mostrar_Pass.setForeground(new java.awt.Color(102, 102, 102));
+        Mostrar_Pass.setText("Mostrar Contraseña");
+        Mostrar_Pass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mostrar_PassActionPerformed(evt);
+            }
+        });
+        Fondo.add(Mostrar_Pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 480, 150, 30));
 
         Login_Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Login_Back.png"))); // NOI18N
         Login_Background.setOpaque(true);
-        Fondo.add(Login_Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 100, 390, 380));
+        Fondo.add(Login_Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, -10, 390, 590));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/arrow-symbol.png"))); // NOI18N
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -226,6 +242,22 @@ public class Login extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jLabel1MouseClicked
 
+    private void SignMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignMouseClicked
+        Login log = new Login();
+        log.setVisible(false);
+        MainScreen ms = new MainScreen();
+        ms.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_SignMouseClicked
+
+    private void Mostrar_PassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mostrar_PassActionPerformed
+        if (Mostrar_Pass.isSelected()) {
+            jPasswordField1.setEchoChar((char) 0);
+        } else {
+            jPasswordField1.setEchoChar('*');
+        }
+    }//GEN-LAST:event_Mostrar_PassActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -275,6 +307,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel Lines4;
     private javax.swing.JLabel LogIN;
     private javax.swing.JLabel Login_Background;
+    private javax.swing.JCheckBox Mostrar_Pass;
     private javax.swing.JLabel Pass;
     private javax.swing.JLabel Real;
     private javax.swing.JPanel Real_Estate;

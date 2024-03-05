@@ -8,10 +8,11 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.event.MouseEvent;
+import javax.swing.JOptionPane;
 
 /**
  *
- * @author Victo
+ * @author Victor
  */
 public class MainScreen extends javax.swing.JFrame implements Runnable {
 
@@ -130,6 +131,7 @@ public class MainScreen extends javax.swing.JFrame implements Runnable {
 
         Add.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/rebautizar.png"))); // NOI18N
+        Add.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Add.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 AddMouseEntered(evt);
@@ -164,6 +166,7 @@ public class MainScreen extends javax.swing.JFrame implements Runnable {
 
         List.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         List.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/portapapeles.png"))); // NOI18N
+        List.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout List_PanelLayout = new javax.swing.GroupLayout(List_Panel);
         List_Panel.setLayout(List_PanelLayout);
@@ -200,6 +203,7 @@ public class MainScreen extends javax.swing.JFrame implements Runnable {
 
         Search.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/buscar.png"))); // NOI18N
+        Search.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         javax.swing.GroupLayout SearchPanelLayout = new javax.swing.GroupLayout(SearchPanel);
         SearchPanel.setLayout(SearchPanelLayout);
@@ -302,7 +306,11 @@ public class MainScreen extends javax.swing.JFrame implements Runnable {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExitMouseClicked
-        System.exit(0);
+        int showConfirmDialog = JOptionPane.showConfirmDialog(rootPane, "Desea salir del Programa?", "WARNING!", JOptionPane.WARNING_MESSAGE);
+
+        if (showConfirmDialog == 0) {
+            System.exit(0);
+        }
     }//GEN-LAST:event_ExitMouseClicked
 
     private void OptionPanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionPanelMouseExited
