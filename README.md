@@ -2,7 +2,7 @@
 Presentado por: 
 Andrea Zelaya | Dariel Sevilla | Josué Ham | Víctor Romero  
 
-## Tabla de COntenidos
+## Tabla de Contenidos
 * [Informacion General](#general-info)
 * [Tecnologías](#technologies)
 * [Información Extra](#setup)
