@@ -45,6 +45,7 @@ public class Login extends javax.swing.JFrame {
         LogIN = new javax.swing.JLabel();
         Sign = new javax.swing.JButton();
         Login_Background = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         Lines1 = new javax.swing.JLabel();
         Lines2 = new javax.swing.JLabel();
         Lines3 = new javax.swing.JLabel();
@@ -166,6 +167,15 @@ public class Login extends javax.swing.JFrame {
         Login_Background.setOpaque(true);
         Fondo.add(Login_Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 100, 390, 380));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/arrow-symbol.png"))); // NOI18N
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        Fondo.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 60));
+
         Lines1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Abstract Lines.png"))); // NOI18N
         Fondo.add(Lines1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 660, 100));
 
@@ -205,6 +215,16 @@ public class Login extends javax.swing.JFrame {
     private void UsernameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UsernameMouseClicked
         Username.setText("");
     }//GEN-LAST:event_UsernameMouseClicked
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        SignUp sign = new SignUp();
+        Login login = new Login();
+        login.setVisible(false);
+        sign.setVisible(true);
+
+        sign.setLocationRelativeTo(null);
+        dispose();
+    }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -262,6 +282,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel TXT_Abajo;
     private javax.swing.JLabel User;
     private javax.swing.JTextField Username;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables

@@ -4,6 +4,8 @@
  */
 package proyecto_tbd1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Victo
@@ -46,6 +48,7 @@ public class SignUp extends javax.swing.JFrame {
         Sign = new javax.swing.JButton();
         LogIN = new javax.swing.JLabel();
         Log = new javax.swing.JButton();
+        Exit = new javax.swing.JLabel();
         Pass1 = new javax.swing.JLabel();
         Login_Background = new javax.swing.JLabel();
         Lines1 = new javax.swing.JLabel();
@@ -189,6 +192,22 @@ public class SignUp extends javax.swing.JFrame {
         });
         Fondo.add(Log, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 430, 330, 40));
 
+        Exit.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/cerrar-sesion.png"))); // NOI18N
+        Exit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Exit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ExitMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                ExitMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ExitMouseExited(evt);
+            }
+        });
+        Fondo.add(Exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 500, -1, -1));
+
         Pass1.setFont(new java.awt.Font("Neo Sans Std Light", 0, 18)); // NOI18N
         Pass1.setForeground(new java.awt.Color(153, 153, 153));
         Pass1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -252,6 +271,22 @@ public class SignUp extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_LogMouseClicked
 
+    private void ExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExitMouseClicked
+        int showConfirmDialog = JOptionPane.showConfirmDialog(rootPane, "Desea salir del Programa?", "WARNING!", JOptionPane.WARNING_MESSAGE);
+        
+        if (showConfirmDialog == 0) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_ExitMouseClicked
+
+    private void ExitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExitMouseEntered
+
+    }//GEN-LAST:event_ExitMouseEntered
+
+    private void ExitMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExitMouseExited
+
+    }//GEN-LAST:event_ExitMouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -297,6 +332,7 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JLabel Discover;
     private javax.swing.JLabel Dreams;
     private javax.swing.JLabel Estate;
+    private javax.swing.JLabel Exit;
     private javax.swing.JPanel Fondo;
     private javax.swing.JLabel Lines;
     private javax.swing.JLabel Lines1;
