@@ -50,6 +50,7 @@ public class SignUp extends javax.swing.JFrame {
         Log = new javax.swing.JButton();
         Exit = new javax.swing.JLabel();
         Pass1 = new javax.swing.JLabel();
+        Mostrar_Pass = new javax.swing.JCheckBox();
         Login_Background = new javax.swing.JLabel();
         Lines1 = new javax.swing.JLabel();
         Lines2 = new javax.swing.JLabel();
@@ -100,20 +101,20 @@ public class SignUp extends javax.swing.JFrame {
         DeNuevo.setForeground(new java.awt.Color(51, 153, 0));
         DeNuevo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DeNuevo.setText("de nuevo!");
-        Fondo.add(DeNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 380, 120));
+        Fondo.add(DeNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, 380, 120));
 
         Bienvenido.setBackground(new java.awt.Color(0, 0, 0));
         Bienvenido.setFont(new java.awt.Font("Neo Sans Std", 1, 48)); // NOI18N
         Bienvenido.setForeground(new java.awt.Color(51, 51, 51));
         Bienvenido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Bienvenido.setText("BIENVENIDO");
-        Fondo.add(Bienvenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, 390, 70));
+        Fondo.add(Bienvenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 90, 390, 70));
 
         User.setFont(new java.awt.Font("Neo Sans Std Light", 0, 24)); // NOI18N
         User.setForeground(new java.awt.Color(51, 51, 51));
         User.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         User.setText("USERNAME");
-        Fondo.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, 140, 40));
+        Fondo.add(User, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 180, 140, 40));
 
         Username.setFont(new java.awt.Font("Neo Sans Std Light", 0, 18)); // NOI18N
         Username.setText("Ingrese su Usuario");
@@ -127,13 +128,13 @@ public class SignUp extends javax.swing.JFrame {
                 UsernameActionPerformed(evt);
             }
         });
-        Fondo.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 230, 330, 40));
+        Fondo.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 210, 330, 40));
 
         Pass.setFont(new java.awt.Font("Neo Sans Std Light", 0, 24)); // NOI18N
         Pass.setForeground(new java.awt.Color(51, 51, 51));
         Pass.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Pass.setText("PASSWORD");
-        Fondo.add(Pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 280, 140, 40));
+        Fondo.add(Pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 260, 140, 40));
 
         jPasswordField1.setFont(new java.awt.Font("Neo Sans Std Light", 0, 18)); // NOI18N
         jPasswordField1.setText("jPasswordField1");
@@ -147,7 +148,7 @@ public class SignUp extends javax.swing.JFrame {
                 jPasswordField1ActionPerformed(evt);
             }
         });
-        Fondo.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 310, 330, 40));
+        Fondo.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 290, 330, 40));
 
         SignIN.setBackground(new java.awt.Color(0, 0, 0));
         SignIN.setFont(new java.awt.Font("Neo Sans Std", 1, 28)); // NOI18N
@@ -161,6 +162,11 @@ public class SignUp extends javax.swing.JFrame {
         Sign.setFont(new java.awt.Font("Neo Sans Std", 1, 24)); // NOI18N
         Sign.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Sign.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Sign.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SignMouseClicked(evt);
+            }
+        });
         Sign.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SignActionPerformed(evt);
@@ -214,9 +220,19 @@ public class SignUp extends javax.swing.JFrame {
         Pass1.setText("No tienes cuenta? Entonces dale Log In");
         Fondo.add(Pass1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 400, 330, 40));
 
+        Mostrar_Pass.setFont(new java.awt.Font("Neo Sans Std Light", 0, 14)); // NOI18N
+        Mostrar_Pass.setForeground(new java.awt.Color(102, 102, 102));
+        Mostrar_Pass.setText("Mostrar Contraseña");
+        Mostrar_Pass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mostrar_PassActionPerformed(evt);
+            }
+        });
+        Fondo.add(Mostrar_Pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 330, 150, 30));
+
         Login_Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Login_Back.png"))); // NOI18N
         Login_Background.setOpaque(true);
-        Fondo.add(Login_Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 100, 390, 380));
+        Fondo.add(Login_Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 90, 390, 400));
 
         Lines1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Abstract Lines.png"))); // NOI18N
         Fondo.add(Lines1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 660, 100));
@@ -243,7 +259,7 @@ public class SignUp extends javax.swing.JFrame {
     }//GEN-LAST:event_SignActionPerformed
 
     private void UsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsernameActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_UsernameActionPerformed
 
     private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
@@ -273,7 +289,7 @@ public class SignUp extends javax.swing.JFrame {
 
     private void ExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExitMouseClicked
         int showConfirmDialog = JOptionPane.showConfirmDialog(rootPane, "Desea salir del Programa?", "WARNING!", JOptionPane.WARNING_MESSAGE);
-        
+
         if (showConfirmDialog == 0) {
             System.exit(0);
         }
@@ -286,6 +302,27 @@ public class SignUp extends javax.swing.JFrame {
     private void ExitMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExitMouseExited
 
     }//GEN-LAST:event_ExitMouseExited
+
+    private void SignMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignMouseClicked
+        if (Username.getText().equals("")) {
+            JOptionPane.showMessageDialog(null, "Inserte su Nombre de Usuario Correctamente");
+        } else if (jPasswordField1.getText().equals("")) {
+            JOptionPane.showMessageDialog(null, "Inserte su Contraseña de Usuario Correctamente");
+        } else if (Username.getText().equals("Admin") && jPasswordField1.getText().equals("12345")) {
+            JOptionPane.showMessageDialog(null, "Succesfull Login", "Login de Administrador", JOptionPane.PLAIN_MESSAGE);
+            isAdmin = true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Usuario o Contraseña Incorectos \nIntentelo de Nuevo", "Incorrect User or Pass", JOptionPane.WARNING_MESSAGE);
+        }
+    }//GEN-LAST:event_SignMouseClicked
+
+    private void Mostrar_PassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mostrar_PassActionPerformed
+        if (Mostrar_Pass.isSelected()) {
+            jPasswordField1.setEchoChar((char) 0);
+        } else {
+            jPasswordField1.setEchoChar('*');
+        }
+    }//GEN-LAST:event_Mostrar_PassActionPerformed
 
     /**
      * @param args the command line arguments
@@ -325,6 +362,8 @@ public class SignUp extends javax.swing.JFrame {
         });
     }
 
+    boolean isAdmin = false;
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Background;
     private javax.swing.JLabel Bienvenido;
@@ -342,6 +381,7 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JButton Log;
     private javax.swing.JLabel LogIN;
     private javax.swing.JLabel Login_Background;
+    private javax.swing.JCheckBox Mostrar_Pass;
     private javax.swing.JLabel Pass;
     private javax.swing.JLabel Pass1;
     private javax.swing.JLabel Real;

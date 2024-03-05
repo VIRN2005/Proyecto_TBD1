@@ -9,7 +9,7 @@ import java.awt.Toolkit;
 
 /**
  *
- * @author Victo
+ * @author Victor
  */
 public class Loading_Screen extends javax.swing.JFrame implements Runnable {
 
@@ -28,7 +28,7 @@ public class Loading_Screen extends javax.swing.JFrame implements Runnable {
         // Threads & all Stuff
         Thread pb = new Thread(this);
         pb.start();
-        
+
     }
 
     /**
@@ -157,6 +157,6 @@ public class Loading_Screen extends javax.swing.JFrame implements Runnable {
         SignUp signup = new SignUp();
         signup.setVisible(true);
         dispose();
-        
+
     }
 }
