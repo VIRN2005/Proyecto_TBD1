@@ -11,20 +11,20 @@ import java.awt.Toolkit;
  *
  * @author Victo
  */
-public class Loading_Screen extends javax.swing.JFrame implements Runnable{
+public class Loading_Screen extends javax.swing.JFrame implements Runnable {
 
     /**
      * Creates new form Main_Screen
      */
     public Loading_Screen() {
         initComponents();
-        
+
         // Loaction settings
         this.setLocationRelativeTo(null);
         this.setTitle("Teoría de Base de Datos I");
         Image icono = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("pics/Tiger.jpg"));
         this.setIconImage(icono);
-        
+
         // Threads & all Stuff
         Thread pb = new Thread(this);
         pb.start();
@@ -148,12 +148,14 @@ public class Loading_Screen extends javax.swing.JFrame implements Runnable{
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            Loading.setText(i+"%");
+            Loading.setText(i + "%");
             jProgressBar1.setValue(i);
         }
-        
-        MainScreen ms = new MainScreen();
-        ms.setVisible(true);
+
+//        MainScreen ms = new MainScreen();
+//        ms.setVisible(true);
+        Login login = new Login();
+        login.setVisible(true);
         dispose();
         
     }
