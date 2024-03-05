@@ -1,9 +1,9 @@
 ## PROYECTO FINAL DE LA CLASE DE TEORIA DE BASE DE DATOS 
 Presentado por: 
-  >> Andrea Zelaya
-  >> Dariel Sevilla
-  >> Josué Ham
-  >> Víctor Romero  
+  > Andrea Zelaya
+  > Dariel Sevilla
+  > Josué Ham
+  > Víctor Romero  
 
 ## Tabla de COntenidos
 * [Informacion General](#general-info)
@@ -18,12 +18,12 @@ dispersa en diversos formatos y plataformas, dificultando su acceso eficiente y 
 La implementación de una base de datos relacional utilizando MariaDB busca abordar esta problemática y establecer 
 una infraestructura robusta para el manejo integral de datos.
 	
-## Technologías
+## Technologías Utilizadas en el Proyecto
 El proyecto está creado en:
-* Apache NetBeans 17         // IDE
-* Java Development Kit v19   // JDK
-* Maria DB                   // BD
-* HeidiSQL                   // DBMS
+* IDE  // Apache NetBeans 17         
+* JDK  // Java Development Kit v19   
+* BD   // Maria DB                   
+* DBMS // HeidiSQL                   
 	
 ## Setup
 Para correr este proyecto de la mejor manera es recomendable instalar las fuentes proporcionadas en el Repositorio
