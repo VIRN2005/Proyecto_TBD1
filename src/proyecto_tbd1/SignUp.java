@@ -19,6 +19,7 @@ public class SignUp extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setTitle("Teoría de Base de Datos I");
+        this.pack();
     }
 
     /**

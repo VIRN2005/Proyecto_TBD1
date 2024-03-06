@@ -24,6 +24,7 @@ public class Loading_Screen extends javax.swing.JFrame implements Runnable {
         this.setTitle("Teoría de Base de Datos I");
         Image icono = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("pics/Tiger.jpg"));
         this.setIconImage(icono);
+        this.pack();
 
         // Threads & all Stuff
         Thread pb = new Thread(this);

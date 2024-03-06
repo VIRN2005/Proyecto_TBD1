@@ -22,7 +22,6 @@ public class MainScreen extends javax.swing.JFrame implements Runnable {
     public MainScreen() {
         initComponents();
         getContentPane().setPreferredSize(Toolkit.getDefaultToolkit().getScreenSize());
-        pack();
         setResizable(false);
         show();
         setLocationRelativeTo(null);
