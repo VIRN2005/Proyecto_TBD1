@@ -56,7 +56,7 @@ public class Login extends javax.swing.JFrame {
         Lines.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Abstract Lines.png"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Fondo.setBackground(new java.awt.Color(255, 255, 255));
         Fondo.setForeground(new java.awt.Color(255, 255, 255));
@@ -207,8 +207,7 @@ public class Login extends javax.swing.JFrame {
         Background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Fondo.png"))); // NOI18N
         Fondo.add(Background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 580));
 
-        getContentPane().add(Fondo);
-        Fondo.setBounds(0, 0, 990, 580);
+        getContentPane().add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -315,6 +315,8 @@ public class SignUp extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(null, "Usuario o Contraseña Incorectos \nIntentelo de Nuevo", "Incorrect User or Pass", JOptionPane.WARNING_MESSAGE);
         }
+        
+        
     }//GEN-LAST:event_SignMouseClicked
 
     private void Mostrar_PassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mostrar_PassActionPerformed
