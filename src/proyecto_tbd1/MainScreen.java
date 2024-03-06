@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
  * @author Victor
  */
 public class MainScreen extends javax.swing.JFrame implements Runnable {
-
+    Admin admin = new Admin();
     /**
      * Creates new form MainScree
      */
