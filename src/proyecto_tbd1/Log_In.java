@@ -10,16 +10,19 @@ import javax.swing.JOptionPane;
  *
  * @author Victo
  */
-public class SignUp extends javax.swing.JFrame {
+public class Log_In extends javax.swing.JFrame {
 
     /**
      * Creates new form Login
      */
-    public SignUp() {
+    public Log_In() {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setTitle("Teoría de Base de Datos I");
         this.pack();
+
+        Sign_In.setLocationRelativeTo(this);
+        Sign_In.pack();
     }
 
     /**
@@ -31,7 +34,30 @@ public class SignUp extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Lines = new javax.swing.JLabel();
+        Sign_In = new javax.swing.JFrame();
+        Fondo1 = new javax.swing.JPanel();
+        Real_Estate1 = new javax.swing.JPanel();
+        Dreams1 = new javax.swing.JLabel();
+        Discover1 = new javax.swing.JLabel();
+        Real1 = new javax.swing.JLabel();
+        Estate1 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        TXT_Abajo = new javax.swing.JLabel();
+        Bienvenido1 = new javax.swing.JLabel();
+        User1 = new javax.swing.JLabel();
+        Username1 = new javax.swing.JTextField();
+        Pass2 = new javax.swing.JLabel();
+        jPasswordField2 = new javax.swing.JPasswordField();
+        LogIN1 = new javax.swing.JLabel();
+        Sign1 = new javax.swing.JButton();
+        Mostrar_Pass1 = new javax.swing.JCheckBox();
+        Login_Background1 = new javax.swing.JLabel();
+        Arrow = new javax.swing.JLabel();
+        Lines5 = new javax.swing.JLabel();
+        Lines6 = new javax.swing.JLabel();
+        Lines7 = new javax.swing.JLabel();
+        Lines8 = new javax.swing.JLabel();
+        Background1 = new javax.swing.JLabel();
         Fondo = new javax.swing.JPanel();
         Real_Estate = new javax.swing.JPanel();
         Dreams = new javax.swing.JLabel();
@@ -59,7 +85,164 @@ public class SignUp extends javax.swing.JFrame {
         Lines4 = new javax.swing.JLabel();
         Background = new javax.swing.JLabel();
 
-        Lines.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Abstract Lines.png"))); // NOI18N
+        Sign_In.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        Sign_In.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Fondo1.setBackground(new java.awt.Color(255, 255, 255));
+        Fondo1.setForeground(new java.awt.Color(255, 255, 255));
+        Fondo1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Real_Estate1.setBackground(new java.awt.Color(255, 255, 255));
+        Real_Estate1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Dreams1.setFont(new java.awt.Font("British Shorthair", 0, 80)); // NOI18N
+        Dreams1.setForeground(new java.awt.Color(0, 0, 0));
+        Dreams1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Dreams1.setText("dreams");
+        Real_Estate1.add(Dreams1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 240, 280, -1));
+
+        Discover1.setFont(new java.awt.Font("Neo Sans Std", 0, 30)); // NOI18N
+        Discover1.setForeground(new java.awt.Color(0, 153, 51));
+        Discover1.setText("Discover the House of your...");
+        Real_Estate1.add(Discover1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, -1));
+
+        Real1.setFont(new java.awt.Font("British Shorthair", 1, 110)); // NOI18N
+        Real1.setForeground(new java.awt.Color(0, 0, 0));
+        Real1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Real1.setText("Real");
+        Real_Estate1.add(Real1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 240, -1));
+
+        Estate1.setFont(new java.awt.Font("Neo Sans Std", 1, 100)); // NOI18N
+        Estate1.setForeground(new java.awt.Color(102, 204, 0));
+        Estate1.setText("Estate");
+        Real_Estate1.add(Estate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 120, -1, -1));
+
+        jSeparator2.setBackground(new java.awt.Color(153, 153, 153));
+        Real_Estate1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 550, 20));
+
+        Fondo1.add(Real_Estate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 590, 380));
+
+        TXT_Abajo.setFont(new java.awt.Font("British Shorthair", 0, 70)); // NOI18N
+        TXT_Abajo.setForeground(new java.awt.Color(51, 153, 0));
+        TXT_Abajo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        TXT_Abajo.setText("a esta aventura!");
+        Fondo1.add(TXT_Abajo, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, 380, 120));
+
+        Bienvenido1.setBackground(new java.awt.Color(0, 0, 0));
+        Bienvenido1.setFont(new java.awt.Font("Neo Sans Std", 1, 48)); // NOI18N
+        Bienvenido1.setForeground(new java.awt.Color(51, 51, 51));
+        Bienvenido1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Bienvenido1.setText("BIENVENIDO");
+        Fondo1.add(Bienvenido1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 0, 390, 70));
+
+        User1.setFont(new java.awt.Font("Neo Sans Std Light", 0, 24)); // NOI18N
+        User1.setForeground(new java.awt.Color(51, 51, 51));
+        User1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        User1.setText("USERNAME");
+        Fondo1.add(User1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 330, 140, 40));
+
+        Username1.setFont(new java.awt.Font("Neo Sans Std Light", 0, 18)); // NOI18N
+        Username1.setText("Ingrese su Usuario");
+        Username1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Username1MouseClicked(evt);
+            }
+        });
+        Username1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Username1ActionPerformed(evt);
+            }
+        });
+        Fondo1.add(Username1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 360, 330, 40));
+
+        Pass2.setFont(new java.awt.Font("Neo Sans Std Light", 0, 24)); // NOI18N
+        Pass2.setForeground(new java.awt.Color(51, 51, 51));
+        Pass2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Pass2.setText("PASSWORD");
+        Pass2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Pass2MouseClicked(evt);
+            }
+        });
+        Fondo1.add(Pass2, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 410, 140, 40));
+
+        jPasswordField2.setFont(new java.awt.Font("Neo Sans Std Light", 0, 18)); // NOI18N
+        jPasswordField2.setText("jPasswordField1");
+        jPasswordField2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPasswordField2MouseClicked(evt);
+            }
+        });
+        jPasswordField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordField2ActionPerformed(evt);
+            }
+        });
+        Fondo1.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 440, 330, 40));
+
+        LogIN1.setBackground(new java.awt.Color(0, 0, 0));
+        LogIN1.setFont(new java.awt.Font("Neo Sans Std", 1, 28)); // NOI18N
+        LogIN1.setForeground(new java.awt.Color(0, 0, 0));
+        LogIN1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LogIN1.setText("Log In");
+        LogIN1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Fondo1.add(LogIN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 520, 100, 50));
+
+        Sign1.setBackground(new java.awt.Color(102, 204, 0));
+        Sign1.setFont(new java.awt.Font("Neo Sans Std", 1, 24)); // NOI18N
+        Sign1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Sign1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Sign1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Sign1MouseClicked(evt);
+            }
+        });
+        Sign1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Sign1ActionPerformed(evt);
+            }
+        });
+        Fondo1.add(Sign1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 520, 330, 40));
+
+        Mostrar_Pass1.setFont(new java.awt.Font("Neo Sans Std Light", 0, 14)); // NOI18N
+        Mostrar_Pass1.setForeground(new java.awt.Color(102, 102, 102));
+        Mostrar_Pass1.setText("Mostrar Contraseña");
+        Mostrar_Pass1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mostrar_Pass1ActionPerformed(evt);
+            }
+        });
+        Fondo1.add(Mostrar_Pass1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 480, 150, 30));
+
+        Login_Background1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Login_Back.png"))); // NOI18N
+        Login_Background1.setOpaque(true);
+        Fondo1.add(Login_Background1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, -10, 390, 590));
+
+        Arrow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/arrow-symbol.png"))); // NOI18N
+        Arrow.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Arrow.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ArrowMouseClicked(evt);
+            }
+        });
+        Fondo1.add(Arrow, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 60));
+
+        Lines5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Abstract Lines.png"))); // NOI18N
+        Fondo1.add(Lines5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 660, 100));
+
+        Lines6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Abstract Lines.png"))); // NOI18N
+        Fondo1.add(Lines6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 480, 660, 100));
+
+        Lines7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Abstract Lines.png"))); // NOI18N
+        Fondo1.add(Lines7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-230, 480, 660, 100));
+
+        Lines8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Abstract Lines.png"))); // NOI18N
+        Fondo1.add(Lines8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-280, 0, 720, 100));
+
+        Background1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Fondo.png"))); // NOI18N
+        Fondo1.add(Background1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 580));
+
+        Sign_In.getContentPane().add(Fondo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -280,11 +463,11 @@ public class SignUp extends javax.swing.JFrame {
     }//GEN-LAST:event_SignActionPerformed
 
     private void SignMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignMouseClicked
-        SignUp sign = new SignUp();
-        Login login = new Login();
-        sign.setVisible(false);
-        login.setVisible(true);
-        login.setLocationRelativeTo(null);
+        Log_In log = new Log_In();
+
+        log.setVisible(false);
+        Sign_In.setVisible(true);
+        Sign_In.setLocationRelativeTo(this);
         dispose();
     }//GEN-LAST:event_SignMouseClicked
 
@@ -317,7 +500,7 @@ public class SignUp extends javax.swing.JFrame {
             isAdmin = true;
 
             MainScreen main = new MainScreen();
-            SignUp sign = new SignUp();
+            Log_In sign = new Log_In();
             sign.setVisible(false);
             main.setVisible(true);
             dispose();
@@ -325,7 +508,7 @@ public class SignUp extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Successfull Login!");
 
             MainScreen main = new MainScreen();
-            SignUp sign = new SignUp();
+            Log_In sign = new Log_In();
             main.setVisible(true);
             sign.setVisible(false);
             dispose();
@@ -341,6 +524,56 @@ public class SignUp extends javax.swing.JFrame {
             jPasswordField1.setEchoChar('*');
         }
     }//GEN-LAST:event_Mostrar_PassActionPerformed
+
+    private void Username1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Username1MouseClicked
+        Username.setText("");
+    }//GEN-LAST:event_Username1MouseClicked
+
+    private void Username1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Username1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Username1ActionPerformed
+
+    private void jPasswordField2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField2MouseClicked
+        jPasswordField1.setText("");
+    }//GEN-LAST:event_jPasswordField2MouseClicked
+
+    private void jPasswordField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField2ActionPerformed
+
+    private void Sign1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Sign1MouseClicked
+        Log_In log = new Log_In();
+        log.setVisible(false);
+        MainScreen ms = new MainScreen();
+        ms.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_Sign1MouseClicked
+
+    private void Sign1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sign1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Sign1ActionPerformed
+
+    private void Mostrar_Pass1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mostrar_Pass1ActionPerformed
+        if (Mostrar_Pass.isSelected()) {
+            jPasswordField1.setEchoChar((char) 0);
+        } else {
+            jPasswordField1.setEchoChar('*');
+        }
+    }//GEN-LAST:event_Mostrar_Pass1ActionPerformed
+
+    private void ArrowMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ArrowMouseClicked
+        Log_In login = new Log_In();
+
+        Sign_In.setVisible(false);
+        login.setVisible(true);
+
+        login.setLocationRelativeTo(this);
+        dispose();
+    }//GEN-LAST:event_ArrowMouseClicked
+
+    private void Pass2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Pass2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Pass2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -359,14 +592,18 @@ public class SignUp extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Log_In.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Log_In.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Log_In.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Log_In.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -375,7 +612,7 @@ public class SignUp extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SignUp().setVisible(true);
+                new Log_In().setVisible(true);
             }
         });
     }
@@ -383,32 +620,55 @@ public class SignUp extends javax.swing.JFrame {
     boolean isAdmin = false;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Arrow;
     private javax.swing.JLabel Background;
+    private javax.swing.JLabel Background1;
     private javax.swing.JLabel Bienvenido;
+    private javax.swing.JLabel Bienvenido1;
     private javax.swing.JLabel DeNuevo;
     private javax.swing.JLabel Discover;
+    private javax.swing.JLabel Discover1;
     private javax.swing.JLabel Dreams;
+    private javax.swing.JLabel Dreams1;
     private javax.swing.JLabel Estate;
+    private javax.swing.JLabel Estate1;
     private javax.swing.JLabel Exit;
     private javax.swing.JPanel Fondo;
-    private javax.swing.JLabel Lines;
+    private javax.swing.JPanel Fondo1;
     private javax.swing.JLabel Lines1;
     private javax.swing.JLabel Lines2;
     private javax.swing.JLabel Lines3;
     private javax.swing.JLabel Lines4;
+    private javax.swing.JLabel Lines5;
+    private javax.swing.JLabel Lines6;
+    private javax.swing.JLabel Lines7;
+    private javax.swing.JLabel Lines8;
     private javax.swing.JButton Log;
     private javax.swing.JLabel LogIN;
+    private javax.swing.JLabel LogIN1;
     private javax.swing.JLabel Login_Background;
+    private javax.swing.JLabel Login_Background1;
     private javax.swing.JCheckBox Mostrar_Pass;
+    private javax.swing.JCheckBox Mostrar_Pass1;
     private javax.swing.JLabel Pass;
     private javax.swing.JLabel Pass1;
+    private javax.swing.JLabel Pass2;
     private javax.swing.JLabel Real;
+    private javax.swing.JLabel Real1;
     private javax.swing.JPanel Real_Estate;
+    private javax.swing.JPanel Real_Estate1;
     private javax.swing.JButton Sign;
+    private javax.swing.JButton Sign1;
     private javax.swing.JLabel SignIn;
+    private javax.swing.JFrame Sign_In;
+    private javax.swing.JLabel TXT_Abajo;
     private javax.swing.JLabel User;
+    private javax.swing.JLabel User1;
     private javax.swing.JTextField Username;
+    private javax.swing.JTextField Username1;
     private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     // End of variables declaration//GEN-END:variables
 }

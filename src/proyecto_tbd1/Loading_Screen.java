@@ -155,7 +155,7 @@ public class Loading_Screen extends javax.swing.JFrame implements Runnable {
 
 //        Login login = new Login();
 //        login.setVisible(true);
-        SignUp signup = new SignUp();
+        Log_In signup = new Log_In();
         signup.setVisible(true);
         dispose();
 
