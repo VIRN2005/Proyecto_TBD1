@@ -1,4 +1,4 @@
-## PROYECTO FINAL DE LA CLASE DE TEORIA DE BASE DE DATOS 
+# PROYECTO FINAL DE LA CLASE DE TEORIA DE BASE DE DATOS 
 Presentado por: 
 Andrea Zelaya | Dariel Sevilla | Josué Ham | Víctor Romero  
 

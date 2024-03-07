@@ -8,6 +8,7 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.event.MouseEvent;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,7 +16,9 @@ import javax.swing.JOptionPane;
  * @author Victor
  */
 public class MainScreen extends javax.swing.JFrame implements Runnable {
+
     Admin admin = new Admin();
+
     /**
      * Creates new form MainScree
      */
@@ -36,6 +39,7 @@ public class MainScreen extends javax.swing.JFrame implements Runnable {
         List.setVisible(false);
         Search.setVisible(false);
 
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
     /**
