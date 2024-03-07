@@ -7,6 +7,7 @@ package proyecto_tbd1;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -199,6 +200,11 @@ public class Log_In extends javax.swing.JFrame {
         jPasswordField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordField2ActionPerformed(evt);
+            }
+        });
+        jPasswordField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPasswordField2KeyPressed(evt);
             }
         });
         Fondo1.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 440, 330, 40));
@@ -590,6 +596,11 @@ public class Log_In extends javax.swing.JFrame {
                 jPasswordField1ActionPerformed(evt);
             }
         });
+        jPasswordField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jPasswordField1KeyReleased(evt);
+            }
+        });
         Fondo.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 290, 330, 40));
 
         LogIN.setBackground(new java.awt.Color(0, 0, 0));
@@ -893,6 +904,41 @@ public class Log_In extends javax.swing.JFrame {
     private void Exit2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit2MouseExited
         ExitPanel.setBackground(null);
     }//GEN-LAST:event_Exit2MouseExited
+
+    private void jPasswordField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField2KeyPressed
+
+
+    }//GEN-LAST:event_jPasswordField2KeyPressed
+
+    private void jPasswordField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField1KeyReleased
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            String user = Username.getText();
+            String pass = jPasswordField1.getText();
+
+            if (user.equals("")) {
+                JOptionPane.showMessageDialog(null, "Inserte su Nombre de Usuario Correctamente");
+            } else if (pass.equals("")) {
+                JOptionPane.showMessageDialog(null, "Inserte su Contraseña de Usuario Correctamente");
+            } else if (user.equals("Admin") && pass.equals("12345")) {
+                JOptionPane.showMessageDialog(null, "Succesfull Login", "Login de Administrador", JOptionPane.PLAIN_MESSAGE);
+                isAdmin = true;
+
+                Log_In sign = new Log_In();
+                sign.setVisible(false);
+                Main_Screen.setVisible(true);
+                dispose();
+            } else if (User_Admin.iniciarSesion(user, pass)) {
+                JOptionPane.showMessageDialog(null, "Successfull Login!");
+
+                Log_In sign = new Log_In();
+                Main_Screen.setVisible(true);
+                sign.setVisible(false);
+                dispose();
+            } else {
+                JOptionPane.showMessageDialog(null, "Usuario o Contraseña Incorectos \nIntentelo de Nuevo", "Incorrect User or Pass", JOptionPane.WARNING_MESSAGE);
+            }
+        }
+    }//GEN-LAST:event_jPasswordField1KeyReleased
 
     /**
      * @param args the command line arguments
