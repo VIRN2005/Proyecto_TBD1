@@ -70,16 +70,16 @@ public class Log_In extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         Line = new javax.swing.JPanel();
         Layer = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        Indicator = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         OptionPanel = new javax.swing.JPanel();
         Options = new javax.swing.JLabel();
-        AddPanel = new javax.swing.JPanel();
-        Add = new javax.swing.JLabel();
-        List_Panel = new javax.swing.JPanel();
-        List = new javax.swing.JLabel();
-        SearchPanel = new javax.swing.JPanel();
-        Search = new javax.swing.JLabel();
+        MantenimientoPanel = new javax.swing.JPanel();
+        Mantenimiento = new javax.swing.JLabel();
+        Bitacora_Panel = new javax.swing.JPanel();
+        Bitacora = new javax.swing.JLabel();
+        Reportes_Panel = new javax.swing.JPanel();
+        Reportes = new javax.swing.JLabel();
         ExitPanel = new javax.swing.JPanel();
         Exit2 = new javax.swing.JLabel();
         Real3 = new javax.swing.JLabel();
@@ -290,14 +290,13 @@ public class Log_In extends javax.swing.JFrame {
         Layer.setBackground(new java.awt.Color(102, 204, 0));
         Layer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel1.setFont(new java.awt.Font("Neo Sans Std", 0, 70)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("BITÁCORA");
-        Layer.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 460, 130));
+        Indicator.setBackground(new java.awt.Color(0, 0, 0));
+        Indicator.setFont(new java.awt.Font("Neo Sans Std", 0, 60)); // NOI18N
+        Indicator.setForeground(new java.awt.Color(255, 255, 255));
+        Indicator.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Layer.add(Indicator, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 510, 130));
 
-        jPanel1.add(Layer, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, 460, 120));
+        jPanel1.add(Layer, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, 510, 120));
 
         jPanel3.setBackground(new java.awt.Color(102, 204, 0));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -343,114 +342,128 @@ public class Log_In extends javax.swing.JFrame {
 
         jPanel3.add(OptionPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 110, 90));
 
-        AddPanel.setBackground(new java.awt.Color(102, 204, 0));
-        AddPanel.addMouseListener(new java.awt.event.MouseAdapter() {
+        MantenimientoPanel.setBackground(new java.awt.Color(102, 204, 0));
+        MantenimientoPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                AddPanelMouseEntered(evt);
+                MantenimientoPanelMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                AddPanelMouseExited(evt);
+                MantenimientoPanelMouseExited(evt);
             }
         });
 
-        Add.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/rebautizar.png"))); // NOI18N
-        Add.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Add.addMouseListener(new java.awt.event.MouseAdapter() {
+        Mantenimiento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Mantenimiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/rebautizar.png"))); // NOI18N
+        Mantenimiento.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Mantenimiento.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                AddMouseEntered(evt);
+                MantenimientoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                MantenimientoMouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout AddPanelLayout = new javax.swing.GroupLayout(AddPanel);
-        AddPanel.setLayout(AddPanelLayout);
-        AddPanelLayout.setHorizontalGroup(
-            AddPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Add, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+        javax.swing.GroupLayout MantenimientoPanelLayout = new javax.swing.GroupLayout(MantenimientoPanel);
+        MantenimientoPanel.setLayout(MantenimientoPanelLayout);
+        MantenimientoPanelLayout.setHorizontalGroup(
+            MantenimientoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Mantenimiento, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
         );
-        AddPanelLayout.setVerticalGroup(
-            AddPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(AddPanelLayout.createSequentialGroup()
+        MantenimientoPanelLayout.setVerticalGroup(
+            MantenimientoPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MantenimientoPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Add, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Mantenimiento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(20, 20, 20))
         );
 
-        jPanel3.add(AddPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 110, 80));
+        jPanel3.add(MantenimientoPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 110, 80));
 
-        List_Panel.setBackground(new java.awt.Color(102, 204, 0));
-        List_Panel.addMouseListener(new java.awt.event.MouseAdapter() {
+        Bitacora_Panel.setBackground(new java.awt.Color(102, 204, 0));
+        Bitacora_Panel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                List_PanelMouseEntered(evt);
+                Bitacora_PanelMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                List_PanelMouseExited(evt);
+                Bitacora_PanelMouseExited(evt);
             }
         });
 
-        List.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        List.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/portapapeles.png"))); // NOI18N
-        List.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Bitacora.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Bitacora.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/portapapeles.png"))); // NOI18N
+        Bitacora.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Bitacora.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                BitacoraMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                BitacoraMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout List_PanelLayout = new javax.swing.GroupLayout(List_Panel);
-        List_Panel.setLayout(List_PanelLayout);
-        List_PanelLayout.setHorizontalGroup(
-            List_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout Bitacora_PanelLayout = new javax.swing.GroupLayout(Bitacora_Panel);
+        Bitacora_Panel.setLayout(Bitacora_PanelLayout);
+        Bitacora_PanelLayout.setHorizontalGroup(
+            Bitacora_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 110, Short.MAX_VALUE)
-            .addGroup(List_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(List_PanelLayout.createSequentialGroup()
+            .addGroup(Bitacora_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Bitacora_PanelLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(List, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Bitacora, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
-        List_PanelLayout.setVerticalGroup(
-            List_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        Bitacora_PanelLayout.setVerticalGroup(
+            Bitacora_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 100, Short.MAX_VALUE)
-            .addGroup(List_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(List_PanelLayout.createSequentialGroup()
+            .addGroup(Bitacora_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Bitacora_PanelLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(List, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Bitacora, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        jPanel3.add(List_Panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 110, 100));
+        jPanel3.add(Bitacora_Panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 110, 100));
 
-        SearchPanel.setBackground(new java.awt.Color(102, 204, 0));
-        SearchPanel.addMouseListener(new java.awt.event.MouseAdapter() {
+        Reportes_Panel.setBackground(new java.awt.Color(102, 204, 0));
+        Reportes_Panel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                SearchPanelMouseEntered(evt);
+                Reportes_PanelMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                SearchPanelMouseExited(evt);
+                Reportes_PanelMouseExited(evt);
             }
         });
 
-        Search.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Search.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/buscar.png"))); // NOI18N
-        Search.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Reportes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Reportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/buscar.png"))); // NOI18N
+        Reportes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Reportes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                ReportesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ReportesMouseExited(evt);
+            }
+        });
 
-        javax.swing.GroupLayout SearchPanelLayout = new javax.swing.GroupLayout(SearchPanel);
-        SearchPanel.setLayout(SearchPanelLayout);
-        SearchPanelLayout.setHorizontalGroup(
-            SearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-            .addGroup(SearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(SearchPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Search, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+        javax.swing.GroupLayout Reportes_PanelLayout = new javax.swing.GroupLayout(Reportes_Panel);
+        Reportes_Panel.setLayout(Reportes_PanelLayout);
+        Reportes_PanelLayout.setHorizontalGroup(
+            Reportes_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Reportes_PanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Reportes, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        SearchPanelLayout.setVerticalGroup(
-            SearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 90, Short.MAX_VALUE)
-            .addGroup(SearchPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(SearchPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Search, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+        Reportes_PanelLayout.setVerticalGroup(
+            Reportes_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Reportes_PanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Reportes, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
-        jPanel3.add(SearchPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 110, 90));
+        jPanel3.add(Reportes_Panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 110, 90));
 
         ExitPanel.setBackground(new java.awt.Color(102, 204, 0));
 
@@ -598,6 +611,14 @@ public class Log_In extends javax.swing.JFrame {
                 UsernameActionPerformed(evt);
             }
         });
+        Username.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                UsernameKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                UsernameKeyReleased(evt);
+            }
+        });
         Fondo.add(Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 210, 330, 40));
 
         Pass.setFont(new java.awt.Font("Neo Sans Std Light", 0, 24)); // NOI18N
@@ -607,13 +628,15 @@ public class Log_In extends javax.swing.JFrame {
         Fondo.add(Pass, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 260, 140, 40));
 
         jPasswordField1.setFont(new java.awt.Font("Neo Sans Std Light", 0, 18)); // NOI18N
-        jPasswordField1.setText("jPasswordField1");
         jPasswordField1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPasswordField1MouseClicked(evt);
             }
         });
         jPasswordField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPasswordField1KeyPressed(evt);
+            }
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jPasswordField1KeyReleased(evt);
             }
@@ -855,52 +878,57 @@ public class Log_In extends javax.swing.JFrame {
     }//GEN-LAST:event_Pass2MouseClicked
 
     private void OptionsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionsMouseClicked
-        boolean isVisible = Add.isVisible() || List.isVisible() || Search.isVisible();
+        boolean isVisible = Mantenimiento.isVisible() || Bitacora.isVisible() || Reportes.isVisible();
 
-        Add.setVisible(!isVisible);
-        List.setVisible(!isVisible);
-        Search.setVisible(!isVisible);
+        Mantenimiento.setVisible(!isVisible);
+        Bitacora.setVisible(!isVisible);
+        Reportes.setVisible(!isVisible);
     }//GEN-LAST:event_OptionsMouseClicked
 
     private void OptionsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionsMouseEntered
         OptionPanel.setBackground(new Color(0, 100, 0));
+        Indicator.setText("OPCIONES");
     }//GEN-LAST:event_OptionsMouseEntered
 
     private void OptionsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionsMouseExited
         OptionPanel.setBackground(null);
+        Indicator.setText("");
+
     }//GEN-LAST:event_OptionsMouseExited
 
     private void OptionPanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionPanelMouseExited
         //OptionPanel.setBackground(null);
     }//GEN-LAST:event_OptionPanelMouseExited
 
-    private void AddMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddMouseEntered
-        AddPanel.setBackground(new Color(0, 100, 0));
-    }//GEN-LAST:event_AddMouseEntered
+    private void MantenimientoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MantenimientoMouseEntered
+        MantenimientoPanel.setBackground(new Color(0, 100, 0));
+        Indicator.setText("MANTENIMIENTO");
+    }//GEN-LAST:event_MantenimientoMouseEntered
 
-    private void AddPanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddPanelMouseEntered
-        AddPanel.setBackground(null);
-    }//GEN-LAST:event_AddPanelMouseEntered
+    private void MantenimientoPanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MantenimientoPanelMouseEntered
+        MantenimientoPanel.setBackground(null);
+        Indicator.setText("");
+    }//GEN-LAST:event_MantenimientoPanelMouseEntered
 
-    private void AddPanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddPanelMouseExited
+    private void MantenimientoPanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MantenimientoPanelMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_AddPanelMouseExited
+    }//GEN-LAST:event_MantenimientoPanelMouseExited
 
-    private void List_PanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_List_PanelMouseEntered
-        List_Panel.setBackground(new Color(0, 100, 0));
-    }//GEN-LAST:event_List_PanelMouseEntered
+    private void Bitacora_PanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bitacora_PanelMouseEntered
 
-    private void List_PanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_List_PanelMouseExited
-        List_Panel.setBackground(null);
-    }//GEN-LAST:event_List_PanelMouseExited
+    }//GEN-LAST:event_Bitacora_PanelMouseEntered
 
-    private void SearchPanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SearchPanelMouseEntered
-        SearchPanel.setBackground(new Color(0, 100, 0));
-    }//GEN-LAST:event_SearchPanelMouseEntered
+    private void Bitacora_PanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bitacora_PanelMouseExited
 
-    private void SearchPanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SearchPanelMouseExited
-        SearchPanel.setBackground(null);
-    }//GEN-LAST:event_SearchPanelMouseExited
+    }//GEN-LAST:event_Bitacora_PanelMouseExited
+
+    private void Reportes_PanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Reportes_PanelMouseEntered
+
+    }//GEN-LAST:event_Reportes_PanelMouseEntered
+
+    private void Reportes_PanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Reportes_PanelMouseExited
+
+    }//GEN-LAST:event_Reportes_PanelMouseExited
 
     private void Exit2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit2MouseClicked
         int showConfirmDialog = JOptionPane.showConfirmDialog(rootPane, "Desea salir del Programa?", "WARNING!", JOptionPane.WARNING_MESSAGE);
@@ -911,11 +939,15 @@ public class Log_In extends javax.swing.JFrame {
     }//GEN-LAST:event_Exit2MouseClicked
 
     private void Exit2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit2MouseEntered
-        ExitPanel.setBackground(new Color(0, 100, 0));
+        ExitPanel.setBackground(Color.RED);
+        Indicator.setText("SALIR");
+
     }//GEN-LAST:event_Exit2MouseEntered
 
     private void Exit2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit2MouseExited
         ExitPanel.setBackground(null);
+        Indicator.setText("");
+
     }//GEN-LAST:event_Exit2MouseExited
 
     private void jPasswordField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField2KeyPressed
@@ -932,7 +964,7 @@ public class Log_In extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Inserte su Nombre de Usuario Correctamente");
             } else if (pass.equals("")) {
                 JOptionPane.showMessageDialog(null, "Inserte su Contraseña de Usuario Correctamente");
-            } else if (user.equals("Admin") && pass.equals("1234")) {
+            } else if (user.equals("Admin") && pass.equals("12345")) {
                 JOptionPane.showMessageDialog(null, "Succesfull Login", "Login de Administrador", JOptionPane.PLAIN_MESSAGE);
                 isAdmin = true;
 
@@ -953,6 +985,49 @@ public class Log_In extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jPasswordField1KeyReleased
 
+    private void MantenimientoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MantenimientoMouseExited
+        MantenimientoPanel.setBackground(null);
+        Indicator.setText("");
+    }//GEN-LAST:event_MantenimientoMouseExited
+
+    private void BitacoraMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BitacoraMouseEntered
+        Bitacora_Panel.setBackground(new Color(0, 100, 0));
+        Indicator.setText("BITÁCORA");
+    }//GEN-LAST:event_BitacoraMouseEntered
+
+    private void BitacoraMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BitacoraMouseExited
+        Bitacora_Panel.setBackground(null);
+        Indicator.setText("");
+    }//GEN-LAST:event_BitacoraMouseExited
+
+    private void ReportesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ReportesMouseEntered
+        Reportes_Panel.setBackground(new Color(0, 100, 0));
+        Indicator.setText("REPORTES");
+    }//GEN-LAST:event_ReportesMouseEntered
+
+    private void ReportesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ReportesMouseExited
+        Reportes_Panel.setBackground(null);
+        Indicator.setText("");
+    }//GEN-LAST:event_ReportesMouseExited
+
+    private void UsernameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_UsernameKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_TAB) {
+            jPasswordField1.setText("");
+        }
+    }//GEN-LAST:event_UsernameKeyPressed
+
+    private void UsernameKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_UsernameKeyReleased
+        if (evt.getKeyCode() == KeyEvent.VK_TAB) {
+            jPasswordField1.setText("");
+        }
+    }//GEN-LAST:event_UsernameKeyReleased
+
+    private void jPasswordField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField1KeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_TAB) {
+            jPasswordField1.setText("");
+        }
+    }//GEN-LAST:event_jPasswordField1KeyPressed
+
     /**
      * @param args the command line arguments
      */
@@ -966,9 +1041,9 @@ public class Log_In extends javax.swing.JFrame {
         this.setIconImage(icono);
         this.pack();
 
-        Add.setVisible(false);
-        List.setVisible(false);
-        Search.setVisible(false);
+        Mantenimiento.setVisible(false);
+        Bitacora.setVisible(false);
+        Reportes.setVisible(false);
 
         MainScreen_Admin.setExtendedState(MAXIMIZED_BOTH);
     }
@@ -1015,14 +1090,14 @@ public class Log_In extends javax.swing.JFrame {
     boolean isAdmin = false;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Add;
-    private javax.swing.JPanel AddPanel;
     private javax.swing.JLabel Administrador;
     private javax.swing.JLabel Arrow;
     private javax.swing.JLabel Background;
     private javax.swing.JLabel Background1;
     private javax.swing.JLabel Bienvenido;
     private javax.swing.JLabel Bienvenido1;
+    private javax.swing.JLabel Bitacora;
+    private javax.swing.JPanel Bitacora_Panel;
     private javax.swing.JLabel DeNuevo;
     private javax.swing.JLabel Discover;
     private javax.swing.JLabel Discover1;
@@ -1035,6 +1110,7 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JPanel ExitPanel;
     private javax.swing.JPanel Fondo;
     private javax.swing.JPanel Fondo1;
+    private javax.swing.JLabel Indicator;
     private javax.swing.JPanel Layer;
     private javax.swing.JPanel Line;
     private javax.swing.JLabel Lines1;
@@ -1045,15 +1121,15 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JLabel Lines6;
     private javax.swing.JLabel Lines7;
     private javax.swing.JLabel Lines8;
-    private javax.swing.JLabel List;
     private javax.swing.JLabel ListPanel;
-    private javax.swing.JPanel List_Panel;
     private javax.swing.JButton Log;
     private javax.swing.JLabel LogIN;
     private javax.swing.JLabel LogIN1;
     private javax.swing.JLabel Login_Background;
     private javax.swing.JLabel Login_Background1;
     private javax.swing.JFrame MainScreen_Admin;
+    private javax.swing.JLabel Mantenimiento;
+    private javax.swing.JPanel MantenimientoPanel;
     private javax.swing.JCheckBox Mostrar_Pass;
     private javax.swing.JCheckBox Mostrar_Pass1;
     private javax.swing.JPanel OptionPanel;
@@ -1066,8 +1142,8 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JLabel Real3;
     private javax.swing.JPanel Real_Estate;
     private javax.swing.JPanel Real_Estate1;
-    private javax.swing.JLabel Search;
-    private javax.swing.JPanel SearchPanel;
+    private javax.swing.JLabel Reportes;
+    private javax.swing.JPanel Reportes_Panel;
     private javax.swing.JButton Sign;
     private javax.swing.JButton Sign1;
     private javax.swing.JLabel SignIn;
@@ -1079,7 +1155,6 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JLabel User1;
     private javax.swing.JTextField Username;
     private javax.swing.JTextField Username1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPasswordField jPasswordField1;
