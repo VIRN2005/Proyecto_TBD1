@@ -24,6 +24,8 @@ public class Log_In extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setTitle("Teoría de Base de Datos I");
+        Image icono = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("pics/Tiger.jpg"));
+        this.setIconImage(icono);
         this.pack();
         MainScreen();
 
@@ -64,9 +66,11 @@ public class Log_In extends javax.swing.JFrame {
         Lines7 = new javax.swing.JLabel();
         Lines8 = new javax.swing.JLabel();
         Background1 = new javax.swing.JLabel();
-        Main_Screen = new javax.swing.JFrame();
+        MainScreen_Admin = new javax.swing.JFrame();
         jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        Line = new javax.swing.JPanel();
+        Layer = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         OptionPanel = new javax.swing.JPanel();
         Options = new javax.swing.JLabel();
@@ -82,6 +86,7 @@ public class Log_In extends javax.swing.JFrame {
         State = new javax.swing.JLabel();
         ListPanel = new javax.swing.JLabel();
         SmallHouse = new javax.swing.JLabel();
+        Administrador = new javax.swing.JLabel();
         Fondo = new javax.swing.JPanel();
         Real_Estate = new javax.swing.JPanel();
         Dreams = new javax.swing.JLabel();
@@ -273,19 +278,31 @@ public class Log_In extends javax.swing.JFrame {
 
         Sign_In.getContentPane().add(Fondo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        Main_Screen.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        MainScreen_Admin.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(255, 0, 0));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 500, 370, 120));
+        Line.setBackground(new java.awt.Color(102, 204, 0));
+        Line.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.add(Line, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 40));
 
-        jPanel3.setBackground(new java.awt.Color(255, 0, 0));
+        Layer.setBackground(new java.awt.Color(102, 204, 0));
+        Layer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel1.setFont(new java.awt.Font("Neo Sans Std", 0, 70)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("BITÁCORA");
+        Layer.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 460, 130));
+
+        jPanel1.add(Layer, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, 460, 120));
+
+        jPanel3.setBackground(new java.awt.Color(102, 204, 0));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        OptionPanel.setBackground(new java.awt.Color(255, 0, 0));
+        OptionPanel.setBackground(new java.awt.Color(102, 204, 0));
         OptionPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 OptionPanelMouseExited(evt);
@@ -326,7 +343,7 @@ public class Log_In extends javax.swing.JFrame {
 
         jPanel3.add(OptionPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 110, 90));
 
-        AddPanel.setBackground(new java.awt.Color(255, 0, 0));
+        AddPanel.setBackground(new java.awt.Color(102, 204, 0));
         AddPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 AddPanelMouseEntered(evt);
@@ -361,7 +378,7 @@ public class Log_In extends javax.swing.JFrame {
 
         jPanel3.add(AddPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 110, 80));
 
-        List_Panel.setBackground(new java.awt.Color(255, 0, 0));
+        List_Panel.setBackground(new java.awt.Color(102, 204, 0));
         List_Panel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 List_PanelMouseEntered(evt);
@@ -398,7 +415,7 @@ public class Log_In extends javax.swing.JFrame {
 
         jPanel3.add(List_Panel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 110, 100));
 
-        SearchPanel.setBackground(new java.awt.Color(255, 0, 0));
+        SearchPanel.setBackground(new java.awt.Color(102, 204, 0));
         SearchPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 SearchPanelMouseEntered(evt);
@@ -435,7 +452,7 @@ public class Log_In extends javax.swing.JFrame {
 
         jPanel3.add(SearchPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 110, 90));
 
-        ExitPanel.setBackground(new java.awt.Color(255, 0, 0));
+        ExitPanel.setBackground(new java.awt.Color(102, 204, 0));
 
         Exit2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Exit2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/cerrar-sesion.png"))); // NOI18N
@@ -475,37 +492,42 @@ public class Log_In extends javax.swing.JFrame {
 
         jPanel3.add(ExitPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 110, -1));
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, 110, 780));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, 110, 700));
 
-        Real3.setFont(new java.awt.Font("British Shorthair", 1, 90)); // NOI18N
+        Real3.setFont(new java.awt.Font("British Shorthair", 0, 150)); // NOI18N
         Real3.setForeground(new java.awt.Color(0, 0, 0));
         Real3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Real3.setText("Real");
-        jPanel1.add(Real3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 260, 160));
+        jPanel1.add(Real3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 310, 240));
 
-        State.setFont(new java.awt.Font("Neo Sans Std", 1, 80)); // NOI18N
+        State.setFont(new java.awt.Font("Neo Sans Std", 1, 120)); // NOI18N
         State.setForeground(new java.awt.Color(0, 0, 0));
         State.setText("Estate");
-        jPanel1.add(State, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 300, 110));
+        jPanel1.add(State, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 370, -1));
 
         ListPanel.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         ListPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/MainScreen_House2.png"))); // NOI18N
         jPanel1.add(ListPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 0, 650, 700));
 
         SmallHouse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/MainScreen_House2(Small).png"))); // NOI18N
-        jPanel1.add(SmallHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 500, 110, 120));
+        jPanel1.add(SmallHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 110, 120));
 
-        javax.swing.GroupLayout Main_ScreenLayout = new javax.swing.GroupLayout(Main_Screen.getContentPane());
-        Main_Screen.getContentPane().setLayout(Main_ScreenLayout);
-        Main_ScreenLayout.setHorizontalGroup(
-            Main_ScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        Administrador.setFont(new java.awt.Font("Neo Sans Std", 1, 80)); // NOI18N
+        Administrador.setForeground(new java.awt.Color(204, 204, 204));
+        Administrador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Administrador.setText("Administrador");
+        Administrador.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jPanel1.add(Administrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 560, 590, 110));
+
+        javax.swing.GroupLayout MainScreen_AdminLayout = new javax.swing.GroupLayout(MainScreen_Admin.getContentPane());
+        MainScreen_Admin.getContentPane().setLayout(MainScreen_AdminLayout);
+        MainScreen_AdminLayout.setHorizontalGroup(
+            MainScreen_AdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        Main_ScreenLayout.setVerticalGroup(
-            Main_ScreenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Main_ScreenLayout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 696, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+        MainScreen_AdminLayout.setVerticalGroup(
+            MainScreen_AdminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 675, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -761,13 +783,13 @@ public class Log_In extends javax.swing.JFrame {
 
             Log_In sign = new Log_In();
             sign.setVisible(false);
-            Main_Screen.setVisible(true);
+            MainScreen_Admin.setVisible(true);
             dispose();
         } else if (User_Admin.iniciarSesion(user, pass)) {
             JOptionPane.showMessageDialog(null, "Successfull Login!");
 
             Log_In sign = new Log_In();
-            Main_Screen.setVisible(true);
+            MainScreen_Admin.setVisible(true);
             sign.setVisible(false);
             dispose();
         } else {
@@ -802,7 +824,7 @@ public class Log_In extends javax.swing.JFrame {
     private void Sign1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Sign1MouseClicked
         Log_In log = new Log_In();
         log.setVisible(false);
-        Main_Screen.setVisible(true);
+        MainScreen_Admin.setVisible(true);
         dispose();
     }//GEN-LAST:event_Sign1MouseClicked
 
@@ -841,7 +863,7 @@ public class Log_In extends javax.swing.JFrame {
     }//GEN-LAST:event_OptionsMouseClicked
 
     private void OptionsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionsMouseEntered
-        OptionPanel.setBackground(new Color(139, 0, 0));
+        OptionPanel.setBackground(new Color(0, 100, 0));
     }//GEN-LAST:event_OptionsMouseEntered
 
     private void OptionsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionsMouseExited
@@ -853,7 +875,7 @@ public class Log_In extends javax.swing.JFrame {
     }//GEN-LAST:event_OptionPanelMouseExited
 
     private void AddMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddMouseEntered
-        AddPanel.setBackground(new Color(139, 0, 0));
+        AddPanel.setBackground(new Color(0, 100, 0));
     }//GEN-LAST:event_AddMouseEntered
 
     private void AddPanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddPanelMouseEntered
@@ -865,7 +887,7 @@ public class Log_In extends javax.swing.JFrame {
     }//GEN-LAST:event_AddPanelMouseExited
 
     private void List_PanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_List_PanelMouseEntered
-        List_Panel.setBackground(new Color(139, 0, 0));
+        List_Panel.setBackground(new Color(0, 100, 0));
     }//GEN-LAST:event_List_PanelMouseEntered
 
     private void List_PanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_List_PanelMouseExited
@@ -873,7 +895,7 @@ public class Log_In extends javax.swing.JFrame {
     }//GEN-LAST:event_List_PanelMouseExited
 
     private void SearchPanelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SearchPanelMouseEntered
-        SearchPanel.setBackground(new Color(139, 0, 0));
+        SearchPanel.setBackground(new Color(0, 100, 0));
     }//GEN-LAST:event_SearchPanelMouseEntered
 
     private void SearchPanelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SearchPanelMouseExited
@@ -889,7 +911,7 @@ public class Log_In extends javax.swing.JFrame {
     }//GEN-LAST:event_Exit2MouseClicked
 
     private void Exit2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit2MouseEntered
-        ExitPanel.setBackground(new Color(139, 0, 0));
+        ExitPanel.setBackground(new Color(0, 100, 0));
     }//GEN-LAST:event_Exit2MouseEntered
 
     private void Exit2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit2MouseExited
@@ -910,19 +932,19 @@ public class Log_In extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "Inserte su Nombre de Usuario Correctamente");
             } else if (pass.equals("")) {
                 JOptionPane.showMessageDialog(null, "Inserte su Contraseña de Usuario Correctamente");
-            } else if (user.equals("Admin") && pass.equals("12345")) {
+            } else if (user.equals("Admin") && pass.equals("1234")) {
                 JOptionPane.showMessageDialog(null, "Succesfull Login", "Login de Administrador", JOptionPane.PLAIN_MESSAGE);
                 isAdmin = true;
 
                 Log_In sign = new Log_In();
                 sign.setVisible(false);
-                Main_Screen.setVisible(true);
+                MainScreen_Admin.setVisible(true);
                 dispose();
             } else if (User_Admin.iniciarSesion(user, pass)) {
                 JOptionPane.showMessageDialog(null, "Successfull Login!");
 
                 Log_In sign = new Log_In();
-                Main_Screen.setVisible(true);
+                MainScreen_Admin.setVisible(true);
                 sign.setVisible(false);
                 dispose();
             } else {
@@ -942,12 +964,13 @@ public class Log_In extends javax.swing.JFrame {
         this.setTitle("Teoría de Base de Datos I");
         Image icono = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("pics/Tiger.jpg"));
         this.setIconImage(icono);
+        this.pack();
 
         Add.setVisible(false);
         List.setVisible(false);
         Search.setVisible(false);
 
-        Main_Screen.setExtendedState(MAXIMIZED_BOTH);
+        MainScreen_Admin.setExtendedState(MAXIMIZED_BOTH);
     }
 
     public static void main(String args[]) {
@@ -994,6 +1017,7 @@ public class Log_In extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Add;
     private javax.swing.JPanel AddPanel;
+    private javax.swing.JLabel Administrador;
     private javax.swing.JLabel Arrow;
     private javax.swing.JLabel Background;
     private javax.swing.JLabel Background1;
@@ -1011,6 +1035,8 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JPanel ExitPanel;
     private javax.swing.JPanel Fondo;
     private javax.swing.JPanel Fondo1;
+    private javax.swing.JPanel Layer;
+    private javax.swing.JPanel Line;
     private javax.swing.JLabel Lines1;
     private javax.swing.JLabel Lines2;
     private javax.swing.JLabel Lines3;
@@ -1027,7 +1053,7 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JLabel LogIN1;
     private javax.swing.JLabel Login_Background;
     private javax.swing.JLabel Login_Background1;
-    private javax.swing.JFrame Main_Screen;
+    private javax.swing.JFrame MainScreen_Admin;
     private javax.swing.JCheckBox Mostrar_Pass;
     private javax.swing.JCheckBox Mostrar_Pass1;
     private javax.swing.JPanel OptionPanel;
@@ -1053,8 +1079,8 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JLabel User1;
     private javax.swing.JTextField Username;
     private javax.swing.JTextField Username1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JPasswordField jPasswordField2;
