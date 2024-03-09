@@ -29,13 +29,21 @@ public class Log_In extends javax.swing.JFrame {
         this.pack();
         MainScreen();
 
+        //Cosas del Sign
         Sign_In.setLocationRelativeTo(this);
         Sign_In.pack();
         
+        //Cosas del MainScreen_Vendedor
         MainScreen_Vendedor.setLocationRelativeTo(null);
         MainScreen_Vendedor.pack();
         MainScreen_Vendedor.getContentPane().setPreferredSize(Toolkit.getDefaultToolkit().getScreenSize());
         MainScreen_Vendedor.setExtendedState(MAXIMIZED_BOTH);
+        
+        //Cosas del MainScreen_Comprador
+        MainScreen_Comprador.setLocationRelativeTo(null);
+        MainScreen_Comprador.pack();
+        MainScreen_Comprador.getContentPane().setPreferredSize(Toolkit.getDefaultToolkit().getScreenSize());
+        MainScreen_Comprador.setExtendedState(MAXIMIZED_BOTH);
         
     }
 
@@ -112,7 +120,7 @@ public class Log_In extends javax.swing.JFrame {
         ListPanel1 = new javax.swing.JLabel();
         SmallHouse1 = new javax.swing.JLabel();
         Administrador1 = new javax.swing.JLabel();
-        MainScreen_Admin2 = new javax.swing.JFrame();
+        MainScreen_Comprador = new javax.swing.JFrame();
         jPanel5 = new javax.swing.JPanel();
         Line2 = new javax.swing.JPanel();
         Layer2 = new javax.swing.JPanel();
@@ -120,12 +128,8 @@ public class Log_In extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         OptionPanel2 = new javax.swing.JPanel();
         Options2 = new javax.swing.JLabel();
-        MantenimientoPanel2 = new javax.swing.JPanel();
-        Mantenimiento2 = new javax.swing.JLabel();
-        Bitacora_Panel2 = new javax.swing.JPanel();
-        Bitacora2 = new javax.swing.JLabel();
-        Reportes_Panel2 = new javax.swing.JPanel();
-        Reportes2 = new javax.swing.JLabel();
+        Propiedades_Mercado = new javax.swing.JPanel();
+        PropMercado = new javax.swing.JLabel();
         ExitPanel2 = new javax.swing.JPanel();
         Exit4 = new javax.swing.JLabel();
         Real5 = new javax.swing.JLabel();
@@ -816,16 +820,16 @@ public class Log_In extends javax.swing.JFrame {
             .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 675, Short.MAX_VALUE)
         );
 
-        MainScreen_Admin2.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        MainScreen_Comprador.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Line2.setBackground(new java.awt.Color(102, 204, 0));
+        Line2.setBackground(new java.awt.Color(255, 153, 0));
         Line2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel5.add(Line2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 40));
 
-        Layer2.setBackground(new java.awt.Color(102, 204, 0));
+        Layer2.setBackground(new java.awt.Color(255, 153, 0));
         Layer2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Indicator2.setBackground(new java.awt.Color(0, 0, 0));
@@ -836,10 +840,10 @@ public class Log_In extends javax.swing.JFrame {
 
         jPanel5.add(Layer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, 510, 120));
 
-        jPanel6.setBackground(new java.awt.Color(102, 204, 0));
+        jPanel6.setBackground(new java.awt.Color(255, 153, 0));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        OptionPanel2.setBackground(new java.awt.Color(102, 204, 0));
+        OptionPanel2.setBackground(new java.awt.Color(255, 153, 0));
         OptionPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 OptionPanel2MouseExited(evt);
@@ -874,136 +878,54 @@ public class Log_In extends javax.swing.JFrame {
             OptionPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(OptionPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Options2, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE)
+                .addComponent(Options2, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         jPanel6.add(OptionPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 110, 90));
 
-        MantenimientoPanel2.setBackground(new java.awt.Color(102, 204, 0));
-        MantenimientoPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+        Propiedades_Mercado.setBackground(new java.awt.Color(255, 153, 0));
+        Propiedades_Mercado.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                MantenimientoPanel2MouseEntered(evt);
+                Propiedades_MercadoMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                MantenimientoPanel2MouseExited(evt);
+                Propiedades_MercadoMouseExited(evt);
             }
         });
 
-        Mantenimiento2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Mantenimiento2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/rebautizar.png"))); // NOI18N
-        Mantenimiento2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Mantenimiento2.addMouseListener(new java.awt.event.MouseAdapter() {
+        PropMercado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PropMercado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/buscar.png"))); // NOI18N
+        PropMercado.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PropMercado.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Mantenimiento2MouseEntered(evt);
+                PropMercadoMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                Mantenimiento2MouseExited(evt);
+                PropMercadoMouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout MantenimientoPanel2Layout = new javax.swing.GroupLayout(MantenimientoPanel2);
-        MantenimientoPanel2.setLayout(MantenimientoPanel2Layout);
-        MantenimientoPanel2Layout.setHorizontalGroup(
-            MantenimientoPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Mantenimiento2, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-        );
-        MantenimientoPanel2Layout.setVerticalGroup(
-            MantenimientoPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MantenimientoPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Mantenimiento2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(20, 20, 20))
-        );
-
-        jPanel6.add(MantenimientoPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 110, 80));
-
-        Bitacora_Panel2.setBackground(new java.awt.Color(102, 204, 0));
-        Bitacora_Panel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Bitacora_Panel2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Bitacora_Panel2MouseExited(evt);
-            }
-        });
-
-        Bitacora2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Bitacora2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/portapapeles.png"))); // NOI18N
-        Bitacora2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Bitacora2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Bitacora2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Bitacora2MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout Bitacora_Panel2Layout = new javax.swing.GroupLayout(Bitacora_Panel2);
-        Bitacora_Panel2.setLayout(Bitacora_Panel2Layout);
-        Bitacora_Panel2Layout.setHorizontalGroup(
-            Bitacora_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 110, Short.MAX_VALUE)
-            .addGroup(Bitacora_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(Bitacora_Panel2Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Bitacora2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        Bitacora_Panel2Layout.setVerticalGroup(
-            Bitacora_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-            .addGroup(Bitacora_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(Bitacora_Panel2Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(Bitacora2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-
-        jPanel6.add(Bitacora_Panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 110, 100));
-
-        Reportes_Panel2.setBackground(new java.awt.Color(102, 204, 0));
-        Reportes_Panel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Reportes_Panel2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Reportes_Panel2MouseExited(evt);
-            }
-        });
-
-        Reportes2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Reportes2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/buscar.png"))); // NOI18N
-        Reportes2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Reportes2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Reportes2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Reportes2MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout Reportes_Panel2Layout = new javax.swing.GroupLayout(Reportes_Panel2);
-        Reportes_Panel2.setLayout(Reportes_Panel2Layout);
-        Reportes_Panel2Layout.setHorizontalGroup(
-            Reportes_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Reportes_Panel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(Reportes2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        Reportes_Panel2Layout.setVerticalGroup(
-            Reportes_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Reportes_Panel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout Propiedades_MercadoLayout = new javax.swing.GroupLayout(Propiedades_Mercado);
+        Propiedades_Mercado.setLayout(Propiedades_MercadoLayout);
+        Propiedades_MercadoLayout.setHorizontalGroup(
+            Propiedades_MercadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Propiedades_MercadoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Reportes2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(PropMercado, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
+        );
+        Propiedades_MercadoLayout.setVerticalGroup(
+            Propiedades_MercadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Propiedades_MercadoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(PropMercado, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        jPanel6.add(Reportes_Panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 110, 90));
+        jPanel6.add(Propiedades_Mercado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 110, 90));
 
-        ExitPanel2.setBackground(new java.awt.Color(102, 204, 0));
+        ExitPanel2.setBackground(new java.awt.Color(255, 153, 0));
 
         Exit4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Exit4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/cerrar-sesion.png"))); // NOI18N
@@ -1066,18 +988,18 @@ public class Log_In extends javax.swing.JFrame {
         Administrador2.setFont(new java.awt.Font("Neo Sans Std", 1, 80)); // NOI18N
         Administrador2.setForeground(new java.awt.Color(204, 204, 204));
         Administrador2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Administrador2.setText("Administrador");
+        Administrador2.setText("Comprador");
         Administrador2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jPanel5.add(Administrador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 560, 590, 110));
 
-        javax.swing.GroupLayout MainScreen_Admin2Layout = new javax.swing.GroupLayout(MainScreen_Admin2.getContentPane());
-        MainScreen_Admin2.getContentPane().setLayout(MainScreen_Admin2Layout);
-        MainScreen_Admin2Layout.setHorizontalGroup(
-            MainScreen_Admin2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout MainScreen_CompradorLayout = new javax.swing.GroupLayout(MainScreen_Comprador.getContentPane());
+        MainScreen_Comprador.getContentPane().setLayout(MainScreen_CompradorLayout);
+        MainScreen_CompradorLayout.setHorizontalGroup(
+            MainScreen_CompradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        MainScreen_Admin2Layout.setVerticalGroup(
-            MainScreen_Admin2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        MainScreen_CompradorLayout.setVerticalGroup(
+            MainScreen_CompradorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 675, Short.MAX_VALUE)
         );
 
@@ -1344,8 +1266,9 @@ public class Log_In extends javax.swing.JFrame {
 
             Log_In sign = new Log_In();
             sign.setVisible(false);
-            //MainScreen_Admin.setVisible(true);
-            MainScreen_Vendedor.setVisible(true);
+            MainScreen_Admin.setVisible(true);
+            //MainScreen_Vendedor.setVisible(true);
+            //MainScreen_Comprador.setVisible(true);
             dispose();
         } else if (User_Admin.iniciarSesion(user, pass)) {
             JOptionPane.showMessageDialog(null, "Successfull Login!");
@@ -1509,7 +1432,8 @@ public class Log_In extends javax.swing.JFrame {
 
                 Log_In sign = new Log_In();
                 sign.setVisible(false);
-                MainScreen_Admin.setVisible(true);
+                //MainScreen_Admin.setVisible(true);
+                MainScreen_Vendedor.setVisible(true);
                 dispose();
             } else if (User_Admin.iniciarSesion(user, pass)) {
                 JOptionPane.showMessageDialog(null, "Successfull Login!");
@@ -1651,73 +1575,36 @@ public class Log_In extends javax.swing.JFrame {
     }//GEN-LAST:event_Options2MouseClicked
 
     private void Options2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Options2MouseEntered
-        OptionPanel.setBackground(new Color(0, 100, 0));
-        Indicator.setText("OPCIONES");
+        OptionPanel2.setBackground(new Color(204, 85, 0));
+        Indicator2.setText("OPCIONES");
     }//GEN-LAST:event_Options2MouseEntered
 
     private void Options2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Options2MouseExited
-        OptionPanel.setBackground(null);
-        Indicator.setText("");
+        OptionPanel2.setBackground(null);
+        Indicator2.setText("");
     }//GEN-LAST:event_Options2MouseExited
 
     private void OptionPanel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionPanel2MouseExited
         //OptionPanel.setBackground(null);
     }//GEN-LAST:event_OptionPanel2MouseExited
 
-    private void Mantenimiento2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Mantenimiento2MouseEntered
-        MantenimientoPanel.setBackground(new Color(0, 100, 0));
-        Indicator.setText("MANTENIMIENTO");
-    }//GEN-LAST:event_Mantenimiento2MouseEntered
+    private void PropMercadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PropMercadoMouseEntered
+        Propiedades_Mercado.setBackground(new Color(204, 85, 0));
+        Indicator2.setText("PROP. MERCADO");
+    }//GEN-LAST:event_PropMercadoMouseEntered
 
-    private void Mantenimiento2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Mantenimiento2MouseExited
-        MantenimientoPanel.setBackground(null);
-        Indicator.setText("");
-    }//GEN-LAST:event_Mantenimiento2MouseExited
+    private void PropMercadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PropMercadoMouseExited
+        Propiedades_Mercado.setBackground(null);
+        Indicator2.setText("");
+    }//GEN-LAST:event_PropMercadoMouseExited
 
-    private void MantenimientoPanel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MantenimientoPanel2MouseEntered
-        MantenimientoPanel.setBackground(null);
-        Indicator.setText("");
-    }//GEN-LAST:event_MantenimientoPanel2MouseEntered
+    private void Propiedades_MercadoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Propiedades_MercadoMouseEntered
 
-    private void MantenimientoPanel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MantenimientoPanel2MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MantenimientoPanel2MouseExited
+    }//GEN-LAST:event_Propiedades_MercadoMouseEntered
 
-    private void Bitacora2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bitacora2MouseEntered
-        Bitacora_Panel.setBackground(new Color(0, 100, 0));
-        Indicator.setText("BITÁCORA");
-    }//GEN-LAST:event_Bitacora2MouseEntered
+    private void Propiedades_MercadoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Propiedades_MercadoMouseExited
 
-    private void Bitacora2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bitacora2MouseExited
-        Bitacora_Panel.setBackground(null);
-        Indicator.setText("");
-    }//GEN-LAST:event_Bitacora2MouseExited
-
-    private void Bitacora_Panel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bitacora_Panel2MouseEntered
-
-    }//GEN-LAST:event_Bitacora_Panel2MouseEntered
-
-    private void Bitacora_Panel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bitacora_Panel2MouseExited
-
-    }//GEN-LAST:event_Bitacora_Panel2MouseExited
-
-    private void Reportes2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Reportes2MouseEntered
-        Reportes_Panel.setBackground(new Color(0, 100, 0));
-        Indicator.setText("REPORTES");
-    }//GEN-LAST:event_Reportes2MouseEntered
-
-    private void Reportes2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Reportes2MouseExited
-        Reportes_Panel.setBackground(null);
-        Indicator.setText("");
-    }//GEN-LAST:event_Reportes2MouseExited
-
-    private void Reportes_Panel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Reportes_Panel2MouseEntered
-
-    }//GEN-LAST:event_Reportes_Panel2MouseEntered
-
-    private void Reportes_Panel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Reportes_Panel2MouseExited
-
-    }//GEN-LAST:event_Reportes_Panel2MouseExited
+    }//GEN-LAST:event_Propiedades_MercadoMouseExited
 
     private void Exit4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit4MouseClicked
         int showConfirmDialog = JOptionPane.showConfirmDialog(rootPane, "Desea salir del Programa?", "WARNING!", JOptionPane.WARNING_MESSAGE);
@@ -1728,13 +1615,13 @@ public class Log_In extends javax.swing.JFrame {
     }//GEN-LAST:event_Exit4MouseClicked
 
     private void Exit4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit4MouseEntered
-        ExitPanel.setBackground(Color.RED);
-        Indicator.setText("SALIR");
+        ExitPanel2.setBackground(Color.RED);
+        Indicator2.setText("SALIR");
     }//GEN-LAST:event_Exit4MouseEntered
 
     private void Exit4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit4MouseExited
-        ExitPanel.setBackground(null);
-        Indicator.setText("");
+        ExitPanel2.setBackground(null);
+        Indicator2.setText("");
     }//GEN-LAST:event_Exit4MouseExited
 
     /**
@@ -1811,9 +1698,7 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JLabel Bienvenido;
     private javax.swing.JLabel Bienvenido1;
     private javax.swing.JLabel Bitacora;
-    private javax.swing.JLabel Bitacora2;
     private javax.swing.JPanel Bitacora_Panel;
-    private javax.swing.JPanel Bitacora_Panel2;
     private javax.swing.JLabel DeNuevo;
     private javax.swing.JLabel Discover;
     private javax.swing.JLabel Discover1;
@@ -1856,12 +1741,10 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JLabel Login_Background;
     private javax.swing.JLabel Login_Background1;
     private javax.swing.JFrame MainScreen_Admin;
-    private javax.swing.JFrame MainScreen_Admin2;
+    private javax.swing.JFrame MainScreen_Comprador;
     private javax.swing.JFrame MainScreen_Vendedor;
     private javax.swing.JLabel Mantenimiento;
-    private javax.swing.JLabel Mantenimiento2;
     private javax.swing.JPanel MantenimientoPanel;
-    private javax.swing.JPanel MantenimientoPanel2;
     private javax.swing.JCheckBox Mostrar_Pass;
     private javax.swing.JCheckBox Mostrar_Pass1;
     private javax.swing.JPanel OptionPanel;
@@ -1874,9 +1757,11 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JLabel Pass1;
     private javax.swing.JLabel Pass2;
     private javax.swing.JLabel PropAsign;
+    private javax.swing.JLabel PropMercado;
     private javax.swing.JLabel PropVendidas;
     private javax.swing.JPanel PropiedadesAsignadas;
     private javax.swing.JPanel PropiedadesVendidas;
+    private javax.swing.JPanel Propiedades_Mercado;
     private javax.swing.JLabel Real;
     private javax.swing.JLabel Real1;
     private javax.swing.JLabel Real3;
@@ -1885,9 +1770,7 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JPanel Real_Estate;
     private javax.swing.JPanel Real_Estate1;
     private javax.swing.JLabel Reportes;
-    private javax.swing.JLabel Reportes2;
     private javax.swing.JPanel Reportes_Panel;
-    private javax.swing.JPanel Reportes_Panel2;
     private javax.swing.JButton Sign;
     private javax.swing.JButton Sign1;
     private javax.swing.JLabel SignIn;
