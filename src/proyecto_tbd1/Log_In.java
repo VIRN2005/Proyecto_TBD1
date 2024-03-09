@@ -31,6 +31,12 @@ public class Log_In extends javax.swing.JFrame {
 
         Sign_In.setLocationRelativeTo(this);
         Sign_In.pack();
+        
+        MainScreen_Vendedor.setLocationRelativeTo(null);
+        MainScreen_Vendedor.pack();
+        MainScreen_Vendedor.getContentPane().setPreferredSize(Toolkit.getDefaultToolkit().getScreenSize());
+        MainScreen_Vendedor.setExtendedState(MAXIMIZED_BOTH);
+        
     }
 
     /**
@@ -87,6 +93,46 @@ public class Log_In extends javax.swing.JFrame {
         ListPanel = new javax.swing.JLabel();
         SmallHouse = new javax.swing.JLabel();
         Administrador = new javax.swing.JLabel();
+        MainScreen_Vendedor = new javax.swing.JFrame();
+        jPanel2 = new javax.swing.JPanel();
+        Line1 = new javax.swing.JPanel();
+        Layer1 = new javax.swing.JPanel();
+        Indicator1 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        OptionVendedor = new javax.swing.JPanel();
+        OptionsVend = new javax.swing.JLabel();
+        PropiedadesAsignadas = new javax.swing.JPanel();
+        PropAsign = new javax.swing.JLabel();
+        PropiedadesVendidas = new javax.swing.JPanel();
+        PropVendidas = new javax.swing.JLabel();
+        ExitPanel1 = new javax.swing.JPanel();
+        Exit3 = new javax.swing.JLabel();
+        Real4 = new javax.swing.JLabel();
+        State1 = new javax.swing.JLabel();
+        ListPanel1 = new javax.swing.JLabel();
+        SmallHouse1 = new javax.swing.JLabel();
+        Administrador1 = new javax.swing.JLabel();
+        MainScreen_Admin2 = new javax.swing.JFrame();
+        jPanel5 = new javax.swing.JPanel();
+        Line2 = new javax.swing.JPanel();
+        Layer2 = new javax.swing.JPanel();
+        Indicator2 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        OptionPanel2 = new javax.swing.JPanel();
+        Options2 = new javax.swing.JLabel();
+        MantenimientoPanel2 = new javax.swing.JPanel();
+        Mantenimiento2 = new javax.swing.JLabel();
+        Bitacora_Panel2 = new javax.swing.JPanel();
+        Bitacora2 = new javax.swing.JLabel();
+        Reportes_Panel2 = new javax.swing.JPanel();
+        Reportes2 = new javax.swing.JLabel();
+        ExitPanel2 = new javax.swing.JPanel();
+        Exit4 = new javax.swing.JLabel();
+        Real5 = new javax.swing.JLabel();
+        State2 = new javax.swing.JLabel();
+        ListPanel2 = new javax.swing.JLabel();
+        SmallHouse2 = new javax.swing.JLabel();
+        Administrador2 = new javax.swing.JLabel();
         Fondo = new javax.swing.JPanel();
         Real_Estate = new javax.swing.JPanel();
         Dreams = new javax.swing.JLabel();
@@ -543,6 +589,498 @@ public class Log_In extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 675, Short.MAX_VALUE)
         );
 
+        MainScreen_Vendedor.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Line1.setBackground(new java.awt.Color(0, 204, 204));
+        Line1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel2.add(Line1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 40));
+
+        Layer1.setBackground(new java.awt.Color(0, 204, 204));
+        Layer1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Indicator1.setBackground(new java.awt.Color(0, 0, 0));
+        Indicator1.setFont(new java.awt.Font("Neo Sans Std", 0, 60)); // NOI18N
+        Indicator1.setForeground(new java.awt.Color(255, 255, 255));
+        Indicator1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Layer1.add(Indicator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 510, 130));
+
+        jPanel2.add(Layer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, 510, 120));
+
+        jPanel4.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        OptionVendedor.setBackground(new java.awt.Color(0, 204, 204));
+        OptionVendedor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                OptionVendedorMouseExited(evt);
+            }
+        });
+
+        OptionsVend.setBackground(new java.awt.Color(255, 255, 255));
+        OptionsVend.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        OptionsVend.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Option_Menu.png"))); // NOI18N
+        OptionsVend.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        OptionsVend.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                OptionsVendMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                OptionsVendMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                OptionsVendMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout OptionVendedorLayout = new javax.swing.GroupLayout(OptionVendedor);
+        OptionVendedor.setLayout(OptionVendedorLayout);
+        OptionVendedorLayout.setHorizontalGroup(
+            OptionVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OptionVendedorLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(OptionsVend, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        OptionVendedorLayout.setVerticalGroup(
+            OptionVendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OptionVendedorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(OptionsVend, javax.swing.GroupLayout.DEFAULT_SIZE, 78, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel4.add(OptionVendedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 110, 90));
+
+        PropiedadesAsignadas.setBackground(new java.awt.Color(0, 204, 204));
+        PropiedadesAsignadas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                PropiedadesAsignadasMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PropiedadesAsignadasMouseExited(evt);
+            }
+        });
+
+        PropAsign.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PropAsign.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/portapapeles.png"))); // NOI18N
+        PropAsign.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PropAsign.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                PropAsignMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PropAsignMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PropiedadesAsignadasLayout = new javax.swing.GroupLayout(PropiedadesAsignadas);
+        PropiedadesAsignadas.setLayout(PropiedadesAsignadasLayout);
+        PropiedadesAsignadasLayout.setHorizontalGroup(
+            PropiedadesAsignadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 110, Short.MAX_VALUE)
+            .addGroup(PropiedadesAsignadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PropiedadesAsignadasLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(PropAsign, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        PropiedadesAsignadasLayout.setVerticalGroup(
+            PropiedadesAsignadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(PropiedadesAsignadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PropiedadesAsignadasLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(PropAsign, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        jPanel4.add(PropiedadesAsignadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 110, 100));
+
+        PropiedadesVendidas.setBackground(new java.awt.Color(0, 204, 204));
+        PropiedadesVendidas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                PropiedadesVendidasMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PropiedadesVendidasMouseExited(evt);
+            }
+        });
+
+        PropVendidas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PropVendidas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/buscar.png"))); // NOI18N
+        PropVendidas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PropVendidas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                PropVendidasMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                PropVendidasMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PropiedadesVendidasLayout = new javax.swing.GroupLayout(PropiedadesVendidas);
+        PropiedadesVendidas.setLayout(PropiedadesVendidasLayout);
+        PropiedadesVendidasLayout.setHorizontalGroup(
+            PropiedadesVendidasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PropiedadesVendidasLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(PropVendidas, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        PropiedadesVendidasLayout.setVerticalGroup(
+            PropiedadesVendidasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PropiedadesVendidasLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(PropVendidas, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jPanel4.add(PropiedadesVendidas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 110, 90));
+
+        ExitPanel1.setBackground(new java.awt.Color(0, 204, 204));
+
+        Exit3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Exit3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/cerrar-sesion.png"))); // NOI18N
+        Exit3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Exit3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Exit3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Exit3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Exit3MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout ExitPanel1Layout = new javax.swing.GroupLayout(ExitPanel1);
+        ExitPanel1.setLayout(ExitPanel1Layout);
+        ExitPanel1Layout.setHorizontalGroup(
+            ExitPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 110, Short.MAX_VALUE)
+            .addGroup(ExitPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ExitPanel1Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Exit3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        ExitPanel1Layout.setVerticalGroup(
+            ExitPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(ExitPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ExitPanel1Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Exit3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        jPanel4.add(ExitPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 110, -1));
+
+        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, 110, 700));
+
+        Real4.setFont(new java.awt.Font("British Shorthair", 0, 150)); // NOI18N
+        Real4.setForeground(new java.awt.Color(0, 0, 0));
+        Real4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Real4.setText("Real");
+        jPanel2.add(Real4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 310, 240));
+
+        State1.setFont(new java.awt.Font("Neo Sans Std", 1, 120)); // NOI18N
+        State1.setForeground(new java.awt.Color(0, 0, 0));
+        State1.setText("Estate");
+        jPanel2.add(State1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 370, -1));
+
+        ListPanel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        ListPanel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/MainScreen_House2.png"))); // NOI18N
+        jPanel2.add(ListPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 0, 650, 700));
+
+        SmallHouse1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/MainScreen_House2(Small).png"))); // NOI18N
+        jPanel2.add(SmallHouse1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 110, 120));
+
+        Administrador1.setFont(new java.awt.Font("Neo Sans Std", 1, 80)); // NOI18N
+        Administrador1.setForeground(new java.awt.Color(204, 204, 204));
+        Administrador1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Administrador1.setText("Vendedor");
+        Administrador1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jPanel2.add(Administrador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 560, 590, 110));
+
+        javax.swing.GroupLayout MainScreen_VendedorLayout = new javax.swing.GroupLayout(MainScreen_Vendedor.getContentPane());
+        MainScreen_Vendedor.getContentPane().setLayout(MainScreen_VendedorLayout);
+        MainScreen_VendedorLayout.setHorizontalGroup(
+            MainScreen_VendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        MainScreen_VendedorLayout.setVerticalGroup(
+            MainScreen_VendedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 675, Short.MAX_VALUE)
+        );
+
+        MainScreen_Admin2.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Line2.setBackground(new java.awt.Color(102, 204, 0));
+        Line2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel5.add(Line2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 40));
+
+        Layer2.setBackground(new java.awt.Color(102, 204, 0));
+        Layer2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Indicator2.setBackground(new java.awt.Color(0, 0, 0));
+        Indicator2.setFont(new java.awt.Font("Neo Sans Std", 0, 60)); // NOI18N
+        Indicator2.setForeground(new java.awt.Color(255, 255, 255));
+        Indicator2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Layer2.add(Indicator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 510, 130));
+
+        jPanel5.add(Layer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 390, 510, 120));
+
+        jPanel6.setBackground(new java.awt.Color(102, 204, 0));
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        OptionPanel2.setBackground(new java.awt.Color(102, 204, 0));
+        OptionPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                OptionPanel2MouseExited(evt);
+            }
+        });
+
+        Options2.setBackground(new java.awt.Color(255, 255, 255));
+        Options2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Options2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/Option_Menu.png"))); // NOI18N
+        Options2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Options2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Options2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Options2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Options2MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout OptionPanel2Layout = new javax.swing.GroupLayout(OptionPanel2);
+        OptionPanel2.setLayout(OptionPanel2Layout);
+        OptionPanel2Layout.setHorizontalGroup(
+            OptionPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, OptionPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Options2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        OptionPanel2Layout.setVerticalGroup(
+            OptionPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(OptionPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Options2, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel6.add(OptionPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 110, 90));
+
+        MantenimientoPanel2.setBackground(new java.awt.Color(102, 204, 0));
+        MantenimientoPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                MantenimientoPanel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                MantenimientoPanel2MouseExited(evt);
+            }
+        });
+
+        Mantenimiento2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Mantenimiento2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/rebautizar.png"))); // NOI18N
+        Mantenimiento2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Mantenimiento2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Mantenimiento2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Mantenimiento2MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout MantenimientoPanel2Layout = new javax.swing.GroupLayout(MantenimientoPanel2);
+        MantenimientoPanel2.setLayout(MantenimientoPanel2Layout);
+        MantenimientoPanel2Layout.setHorizontalGroup(
+            MantenimientoPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(Mantenimiento2, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+        );
+        MantenimientoPanel2Layout.setVerticalGroup(
+            MantenimientoPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MantenimientoPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Mantenimiento2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(20, 20, 20))
+        );
+
+        jPanel6.add(MantenimientoPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 110, 80));
+
+        Bitacora_Panel2.setBackground(new java.awt.Color(102, 204, 0));
+        Bitacora_Panel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Bitacora_Panel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Bitacora_Panel2MouseExited(evt);
+            }
+        });
+
+        Bitacora2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Bitacora2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/portapapeles.png"))); // NOI18N
+        Bitacora2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Bitacora2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Bitacora2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Bitacora2MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Bitacora_Panel2Layout = new javax.swing.GroupLayout(Bitacora_Panel2);
+        Bitacora_Panel2.setLayout(Bitacora_Panel2Layout);
+        Bitacora_Panel2Layout.setHorizontalGroup(
+            Bitacora_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 110, Short.MAX_VALUE)
+            .addGroup(Bitacora_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Bitacora_Panel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Bitacora2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        Bitacora_Panel2Layout.setVerticalGroup(
+            Bitacora_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(Bitacora_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Bitacora_Panel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Bitacora2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        jPanel6.add(Bitacora_Panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 110, 100));
+
+        Reportes_Panel2.setBackground(new java.awt.Color(102, 204, 0));
+        Reportes_Panel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Reportes_Panel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Reportes_Panel2MouseExited(evt);
+            }
+        });
+
+        Reportes2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Reportes2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/buscar.png"))); // NOI18N
+        Reportes2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Reportes2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Reportes2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Reportes2MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Reportes_Panel2Layout = new javax.swing.GroupLayout(Reportes_Panel2);
+        Reportes_Panel2.setLayout(Reportes_Panel2Layout);
+        Reportes_Panel2Layout.setHorizontalGroup(
+            Reportes_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Reportes_Panel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Reportes2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        Reportes_Panel2Layout.setVerticalGroup(
+            Reportes_Panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Reportes_Panel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Reportes2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jPanel6.add(Reportes_Panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 110, 90));
+
+        ExitPanel2.setBackground(new java.awt.Color(102, 204, 0));
+
+        Exit4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Exit4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/cerrar-sesion.png"))); // NOI18N
+        Exit4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Exit4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Exit4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Exit4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Exit4MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout ExitPanel2Layout = new javax.swing.GroupLayout(ExitPanel2);
+        ExitPanel2.setLayout(ExitPanel2Layout);
+        ExitPanel2Layout.setHorizontalGroup(
+            ExitPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 110, Short.MAX_VALUE)
+            .addGroup(ExitPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ExitPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Exit4, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        ExitPanel2Layout.setVerticalGroup(
+            ExitPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+            .addGroup(ExitPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ExitPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Exit4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        jPanel6.add(ExitPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 110, -1));
+
+        jPanel5.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 0, 110, 700));
+
+        Real5.setFont(new java.awt.Font("British Shorthair", 0, 150)); // NOI18N
+        Real5.setForeground(new java.awt.Color(0, 0, 0));
+        Real5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Real5.setText("Real");
+        jPanel5.add(Real5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 310, 240));
+
+        State2.setFont(new java.awt.Font("Neo Sans Std", 1, 120)); // NOI18N
+        State2.setForeground(new java.awt.Color(0, 0, 0));
+        State2.setText("Estate");
+        jPanel5.add(State2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 370, -1));
+
+        ListPanel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        ListPanel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/MainScreen_House2.png"))); // NOI18N
+        jPanel5.add(ListPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 0, 650, 700));
+
+        SmallHouse2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pics/MainScreen_House2(Small).png"))); // NOI18N
+        jPanel5.add(SmallHouse2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 110, 120));
+
+        Administrador2.setFont(new java.awt.Font("Neo Sans Std", 1, 80)); // NOI18N
+        Administrador2.setForeground(new java.awt.Color(204, 204, 204));
+        Administrador2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Administrador2.setText("Administrador");
+        Administrador2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jPanel5.add(Administrador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 560, 590, 110));
+
+        javax.swing.GroupLayout MainScreen_Admin2Layout = new javax.swing.GroupLayout(MainScreen_Admin2.getContentPane());
+        MainScreen_Admin2.getContentPane().setLayout(MainScreen_Admin2Layout);
+        MainScreen_Admin2Layout.setHorizontalGroup(
+            MainScreen_Admin2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        MainScreen_Admin2Layout.setVerticalGroup(
+            MainScreen_Admin2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 675, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -806,7 +1344,8 @@ public class Log_In extends javax.swing.JFrame {
 
             Log_In sign = new Log_In();
             sign.setVisible(false);
-            MainScreen_Admin.setVisible(true);
+            //MainScreen_Admin.setVisible(true);
+            MainScreen_Vendedor.setVisible(true);
             dispose();
         } else if (User_Admin.iniciarSesion(user, pass)) {
             JOptionPane.showMessageDialog(null, "Successfull Login!");
@@ -1028,6 +1567,176 @@ public class Log_In extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jPasswordField1KeyPressed
 
+    private void OptionsVendMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionsVendMouseClicked
+        boolean isVisible = PropAsign.isVisible() || PropVendidas.isVisible();
+
+        PropAsign.setVisible(!isVisible);
+        PropVendidas.setVisible(!isVisible);
+    }//GEN-LAST:event_OptionsVendMouseClicked
+
+    private void OptionsVendMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionsVendMouseEntered
+        OptionVendedor.setBackground(new Color(30, 30, 150));
+        Indicator1.setText("OPCIONES");
+    }//GEN-LAST:event_OptionsVendMouseEntered
+
+    private void OptionsVendMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionsVendMouseExited
+        OptionVendedor.setBackground(null);
+        Indicator1.setText("");
+    }//GEN-LAST:event_OptionsVendMouseExited
+
+    private void OptionVendedorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionVendedorMouseExited
+        //OptionPanel.setBackground(null);
+    }//GEN-LAST:event_OptionVendedorMouseExited
+
+    private void PropAsignMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PropAsignMouseEntered
+        PropiedadesAsignadas.setBackground(new Color(30, 30, 150));
+        Indicator1.setText("PROP. ASIGNADAS");
+    }//GEN-LAST:event_PropAsignMouseEntered
+
+    private void PropAsignMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PropAsignMouseExited
+        PropiedadesAsignadas.setBackground(null);
+        Indicator1.setText("");
+    }//GEN-LAST:event_PropAsignMouseExited
+
+    private void PropiedadesAsignadasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PropiedadesAsignadasMouseEntered
+
+    }//GEN-LAST:event_PropiedadesAsignadasMouseEntered
+
+    private void PropiedadesAsignadasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PropiedadesAsignadasMouseExited
+
+    }//GEN-LAST:event_PropiedadesAsignadasMouseExited
+
+    private void PropVendidasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PropVendidasMouseEntered
+        PropiedadesVendidas.setBackground(new Color(30, 30, 150));
+        Indicator1.setText("PROP. VENDIDAS");
+    }//GEN-LAST:event_PropVendidasMouseEntered
+
+    private void PropVendidasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PropVendidasMouseExited
+        PropiedadesVendidas.setBackground(null);
+        Indicator1.setText("");
+    }//GEN-LAST:event_PropVendidasMouseExited
+
+    private void PropiedadesVendidasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PropiedadesVendidasMouseEntered
+
+    }//GEN-LAST:event_PropiedadesVendidasMouseEntered
+
+    private void PropiedadesVendidasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PropiedadesVendidasMouseExited
+
+    }//GEN-LAST:event_PropiedadesVendidasMouseExited
+
+    private void Exit3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit3MouseClicked
+        int showConfirmDialog = JOptionPane.showConfirmDialog(rootPane, "Desea salir del Programa?", "WARNING!", JOptionPane.WARNING_MESSAGE);
+
+        if (showConfirmDialog == 0) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_Exit3MouseClicked
+
+    private void Exit3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit3MouseEntered
+        ExitPanel1.setBackground(Color.RED);
+        Indicator1.setText("SALIR");
+    }//GEN-LAST:event_Exit3MouseEntered
+
+    private void Exit3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit3MouseExited
+        ExitPanel1.setBackground(null);
+        Indicator1.setText("");
+    }//GEN-LAST:event_Exit3MouseExited
+
+    private void Options2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Options2MouseClicked
+        boolean isVisible = Mantenimiento.isVisible() || Bitacora.isVisible() || Reportes.isVisible();
+
+        Mantenimiento.setVisible(!isVisible);
+        Bitacora.setVisible(!isVisible);
+        Reportes.setVisible(!isVisible);
+    }//GEN-LAST:event_Options2MouseClicked
+
+    private void Options2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Options2MouseEntered
+        OptionPanel.setBackground(new Color(0, 100, 0));
+        Indicator.setText("OPCIONES");
+    }//GEN-LAST:event_Options2MouseEntered
+
+    private void Options2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Options2MouseExited
+        OptionPanel.setBackground(null);
+        Indicator.setText("");
+    }//GEN-LAST:event_Options2MouseExited
+
+    private void OptionPanel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OptionPanel2MouseExited
+        //OptionPanel.setBackground(null);
+    }//GEN-LAST:event_OptionPanel2MouseExited
+
+    private void Mantenimiento2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Mantenimiento2MouseEntered
+        MantenimientoPanel.setBackground(new Color(0, 100, 0));
+        Indicator.setText("MANTENIMIENTO");
+    }//GEN-LAST:event_Mantenimiento2MouseEntered
+
+    private void Mantenimiento2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Mantenimiento2MouseExited
+        MantenimientoPanel.setBackground(null);
+        Indicator.setText("");
+    }//GEN-LAST:event_Mantenimiento2MouseExited
+
+    private void MantenimientoPanel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MantenimientoPanel2MouseEntered
+        MantenimientoPanel.setBackground(null);
+        Indicator.setText("");
+    }//GEN-LAST:event_MantenimientoPanel2MouseEntered
+
+    private void MantenimientoPanel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MantenimientoPanel2MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MantenimientoPanel2MouseExited
+
+    private void Bitacora2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bitacora2MouseEntered
+        Bitacora_Panel.setBackground(new Color(0, 100, 0));
+        Indicator.setText("BITÁCORA");
+    }//GEN-LAST:event_Bitacora2MouseEntered
+
+    private void Bitacora2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bitacora2MouseExited
+        Bitacora_Panel.setBackground(null);
+        Indicator.setText("");
+    }//GEN-LAST:event_Bitacora2MouseExited
+
+    private void Bitacora_Panel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bitacora_Panel2MouseEntered
+
+    }//GEN-LAST:event_Bitacora_Panel2MouseEntered
+
+    private void Bitacora_Panel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Bitacora_Panel2MouseExited
+
+    }//GEN-LAST:event_Bitacora_Panel2MouseExited
+
+    private void Reportes2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Reportes2MouseEntered
+        Reportes_Panel.setBackground(new Color(0, 100, 0));
+        Indicator.setText("REPORTES");
+    }//GEN-LAST:event_Reportes2MouseEntered
+
+    private void Reportes2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Reportes2MouseExited
+        Reportes_Panel.setBackground(null);
+        Indicator.setText("");
+    }//GEN-LAST:event_Reportes2MouseExited
+
+    private void Reportes_Panel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Reportes_Panel2MouseEntered
+
+    }//GEN-LAST:event_Reportes_Panel2MouseEntered
+
+    private void Reportes_Panel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Reportes_Panel2MouseExited
+
+    }//GEN-LAST:event_Reportes_Panel2MouseExited
+
+    private void Exit4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit4MouseClicked
+        int showConfirmDialog = JOptionPane.showConfirmDialog(rootPane, "Desea salir del Programa?", "WARNING!", JOptionPane.WARNING_MESSAGE);
+
+        if (showConfirmDialog == 0) {
+            System.exit(0);
+        }
+    }//GEN-LAST:event_Exit4MouseClicked
+
+    private void Exit4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit4MouseEntered
+        ExitPanel.setBackground(Color.RED);
+        Indicator.setText("SALIR");
+    }//GEN-LAST:event_Exit4MouseEntered
+
+    private void Exit4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Exit4MouseExited
+        ExitPanel.setBackground(null);
+        Indicator.setText("");
+    }//GEN-LAST:event_Exit4MouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -1044,6 +1753,9 @@ public class Log_In extends javax.swing.JFrame {
         Mantenimiento.setVisible(false);
         Bitacora.setVisible(false);
         Reportes.setVisible(false);
+        
+        PropAsign.setVisible(false);
+        PropVendidas.setVisible(false);
 
         MainScreen_Admin.setExtendedState(MAXIMIZED_BOTH);
     }
@@ -1091,13 +1803,17 @@ public class Log_In extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Administrador;
+    private javax.swing.JLabel Administrador1;
+    private javax.swing.JLabel Administrador2;
     private javax.swing.JLabel Arrow;
     private javax.swing.JLabel Background;
     private javax.swing.JLabel Background1;
     private javax.swing.JLabel Bienvenido;
     private javax.swing.JLabel Bienvenido1;
     private javax.swing.JLabel Bitacora;
+    private javax.swing.JLabel Bitacora2;
     private javax.swing.JPanel Bitacora_Panel;
+    private javax.swing.JPanel Bitacora_Panel2;
     private javax.swing.JLabel DeNuevo;
     private javax.swing.JLabel Discover;
     private javax.swing.JLabel Discover1;
@@ -1107,12 +1823,22 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JLabel Estate1;
     private javax.swing.JLabel Exit;
     private javax.swing.JLabel Exit2;
+    private javax.swing.JLabel Exit3;
+    private javax.swing.JLabel Exit4;
     private javax.swing.JPanel ExitPanel;
+    private javax.swing.JPanel ExitPanel1;
+    private javax.swing.JPanel ExitPanel2;
     private javax.swing.JPanel Fondo;
     private javax.swing.JPanel Fondo1;
     private javax.swing.JLabel Indicator;
+    private javax.swing.JLabel Indicator1;
+    private javax.swing.JLabel Indicator2;
     private javax.swing.JPanel Layer;
+    private javax.swing.JPanel Layer1;
+    private javax.swing.JPanel Layer2;
     private javax.swing.JPanel Line;
+    private javax.swing.JPanel Line1;
+    private javax.swing.JPanel Line2;
     private javax.swing.JLabel Lines1;
     private javax.swing.JLabel Lines2;
     private javax.swing.JLabel Lines3;
@@ -1122,41 +1848,67 @@ public class Log_In extends javax.swing.JFrame {
     private javax.swing.JLabel Lines7;
     private javax.swing.JLabel Lines8;
     private javax.swing.JLabel ListPanel;
+    private javax.swing.JLabel ListPanel1;
+    private javax.swing.JLabel ListPanel2;
     private javax.swing.JButton Log;
     private javax.swing.JLabel LogIN;
     private javax.swing.JLabel LogIN1;
     private javax.swing.JLabel Login_Background;
     private javax.swing.JLabel Login_Background1;
     private javax.swing.JFrame MainScreen_Admin;
+    private javax.swing.JFrame MainScreen_Admin2;
+    private javax.swing.JFrame MainScreen_Vendedor;
     private javax.swing.JLabel Mantenimiento;
+    private javax.swing.JLabel Mantenimiento2;
     private javax.swing.JPanel MantenimientoPanel;
+    private javax.swing.JPanel MantenimientoPanel2;
     private javax.swing.JCheckBox Mostrar_Pass;
     private javax.swing.JCheckBox Mostrar_Pass1;
     private javax.swing.JPanel OptionPanel;
+    private javax.swing.JPanel OptionPanel2;
+    private javax.swing.JPanel OptionVendedor;
     private javax.swing.JLabel Options;
+    private javax.swing.JLabel Options2;
+    private javax.swing.JLabel OptionsVend;
     private javax.swing.JLabel Pass;
     private javax.swing.JLabel Pass1;
     private javax.swing.JLabel Pass2;
+    private javax.swing.JLabel PropAsign;
+    private javax.swing.JLabel PropVendidas;
+    private javax.swing.JPanel PropiedadesAsignadas;
+    private javax.swing.JPanel PropiedadesVendidas;
     private javax.swing.JLabel Real;
     private javax.swing.JLabel Real1;
     private javax.swing.JLabel Real3;
+    private javax.swing.JLabel Real4;
+    private javax.swing.JLabel Real5;
     private javax.swing.JPanel Real_Estate;
     private javax.swing.JPanel Real_Estate1;
     private javax.swing.JLabel Reportes;
+    private javax.swing.JLabel Reportes2;
     private javax.swing.JPanel Reportes_Panel;
+    private javax.swing.JPanel Reportes_Panel2;
     private javax.swing.JButton Sign;
     private javax.swing.JButton Sign1;
     private javax.swing.JLabel SignIn;
     private javax.swing.JFrame Sign_In;
     private javax.swing.JLabel SmallHouse;
+    private javax.swing.JLabel SmallHouse1;
+    private javax.swing.JLabel SmallHouse2;
     private javax.swing.JLabel State;
+    private javax.swing.JLabel State1;
+    private javax.swing.JLabel State2;
     private javax.swing.JLabel TXT_Abajo;
     private javax.swing.JLabel User;
     private javax.swing.JLabel User1;
     private javax.swing.JTextField Username;
     private javax.swing.JTextField Username1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JSeparator jSeparator1;
